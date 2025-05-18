@@ -11,6 +11,8 @@ html, body {
   overflow-x: hidden;
 }
 
+
+
 body{
   font-family: 'Montserrat', sans-serif;
   background-color: var(--bg-primary) !important;;
@@ -62,11 +64,11 @@ p{
     color: var(--text-primary);
     font-family: 'Saira Extra Condensed', sans-serif;
     letter-spacing: 2px;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .nav-link-wrapper{
-    gap: 57px;
+    gap: 50px;
   }
 
 .navbar .nav-link:hover{
@@ -102,7 +104,7 @@ p{
   border-radius: 30px;
   color: transparent;
   padding-right: 40px;
-  height: 45px;
+  height: 35px;
 }
 
 .search-input:focus{
