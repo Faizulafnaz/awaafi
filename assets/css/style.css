@@ -7,10 +7,16 @@
   --text-secondary: #FFB107;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body{
   font-family: 'Montserrat', sans-serif;
   background-color: var(--bg-primary) !important;;
   color: var(--text-primary);
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 p{
@@ -34,10 +40,14 @@ p{
 }
 
 /* Navbar */
+  
+  .nav-link-wrapper {
+    gap: 1.5rem;
+  }
 
-.logo{
-  height: 126px;
-  width: 265px;
+  .logo{
+  height: 100px;
+  width: 200px;
   margin-top: 50px;
 }
 
@@ -153,6 +163,10 @@ p{
     padding: 0.5rem 0;
 
   }
+  
+    .nav-link::after {
+    width: 40px;
+    }
 
   .nav-link-wrapper {
     gap: 1.25rem;
@@ -161,9 +175,13 @@ p{
 }
 
 @media (max-width: 576px) {
+  
   .nav-link {
     font-size: 1rem;
   }
+     .nav-link::after {
+      width:34px;
+     }
 
   .search-input {
     height: 38px;
@@ -171,9 +189,10 @@ p{
   }
 
   .logo{
-  height: 66px;
-  width: 125px;
-  margin-top: 10px;
+        height: 53px;
+        width: 100px;
+        margin-top: 10px;
+        margin-left: -10px;
 }
 }
 
@@ -190,12 +209,13 @@ p{
   .hero-title{
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
-    font-size: 25px; 
-    line-height: 35px;
     margin: 0 auto;
     text-transform: uppercase;
-    letter-spacing: 5px;
     color: var(--text-primary);
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: 3px;
+    padding: 0 1rem;
   }
 
 
@@ -213,7 +233,6 @@ p{
   transform: translateY(-50%) rotate(180deg);
   transform-origin: center;
   font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 30px;
   color: #CAC9C6;
   text-align: right;
   text-transform: uppercase;
@@ -221,6 +240,10 @@ p{
   writing-mode: vertical-lr;
   text-orientation: sideways-right;
 }
+
+  .hero-text-right h4{
+    font-size: 20px;
+  }
 
   .hero-buttons{
     justify-content: space-evenly;
@@ -242,14 +265,13 @@ p{
     font-size: 20px;
   }
 
-@media (max-width: 1266px) {
-  .hero-title {
-    font-size: 23px;
-    line-height: 30px;
-    letter-spacing: 3px;
-    padding: 0 1rem;
-    letter-spacing: 4px;
+    .hero-logo{
+    width: 250px;
+    height: 75px;
   }
+
+@media (max-width: 1266px) {
+
 
   .hero-buttons {
     width: 100%;
@@ -278,10 +300,7 @@ p{
     right: 10px;
   }
 
-  .hero-logo{
-    width: 250px;
-    height: 75px;
-  }
+
 }
 
 @media (max-width: 992px) {
@@ -417,7 +436,7 @@ p{
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgb(26 23 23 / 69%);
+  background-color: rgb(26 23 23 / 79%);
   z-index: 0; 
 }
 
@@ -435,10 +454,13 @@ p{
 }
 
 .vision-heading {
-  font-size: 72px;
+  font-size: 62px;
   text-transform: uppercase;
-  font-family: 'Saira Extra Condensed', sans-serif;
-  letter-spacing: 2px;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 6px;
+  gap: 30px;
+  font-weight: 600;
+
 }
 
 .vision-text {
@@ -476,7 +498,8 @@ p{
 
 @media (max-width: 576px) {
   .vision-heading {
-    font-size: 36px;
+    font-size: 30px;
+    gap: 2px;
   }
 
   .vision-text {
@@ -497,10 +520,6 @@ p{
   color: white;
 }
 
-.awaafi-image{
-  width: 1251px;
-  height: 547px;
-}
 
 .vertical-left-text{
   position: absolute;
@@ -519,7 +538,6 @@ p{
 }
 
 .card{
-  font-family: 'Saira Extra Condensed', sans-serif;
   letter-spacing: 2px;
   line-height: 35px;
   background-color: var(--bg-card);
@@ -537,8 +555,8 @@ p{
   display: inline-block;
   padding-bottom: 6px;
   margin-bottom: 15px;
-  font-weight: 200;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 30px;
   color: var(--text-primary);
 }
 
@@ -566,7 +584,6 @@ p{
 }
 
 .h-card{
-  font-family: 'Saira Extra Condensed', sans-serif;
   letter-spacing: 2px;
   line-height: 35px;
   background-color: var(--bg-card);
@@ -587,7 +604,7 @@ p{
 }
 
 .chai-text{
-  padding-left: 116px;
+  padding: 39px;
   margin-top: 10px;
 }
 
@@ -680,7 +697,6 @@ p{
   margin-right: 15px;
 }
 
-/* Make carousel show half next image */
 
 
 .image-carousel-section::before {
@@ -754,6 +770,27 @@ p{
   transition: transform 0.6s ease;
 }
 
+@media (max-width: 966px) {
+  .catering-heading {
+    font-size: 2.5rem;
+  }
+
+  .catering-logo {
+    width: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .catering-heading {
+    font-size: 1.8rem;
+  }
+
+  .catering-logo {
+    width: 70px;
+  }
+}
+
+
 .gallery-wrapper {
   scroll-behavior: smooth;
   white-space: nowrap;
@@ -768,6 +805,15 @@ p{
   object-fit: cover;
   border-radius: 10px;
   flex-shrink: 0;
+  transition: transform 0.4s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .gallery-img.portrait {
@@ -1221,9 +1267,11 @@ p{
 .footer-one .social li {
   display: inline-block;
   margin-right: 15px;
+  color: #FFB107;
 }
 .footer-one .social li:last-child {
   margin-right: 0;
+
 }
 .footer-one .social li a {
   font-size: 18px;

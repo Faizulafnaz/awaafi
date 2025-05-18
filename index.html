@@ -16,8 +16,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -39,7 +47,7 @@
 
           <!-- Nav links -->
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <form class="d-block d-lg-none mt-3 w-100 position-relative" role="search">
+              <form class="d-block d-lg-none mt-3 w-100 position-relative" role="search" style="margin-bottom: 23px;">
                 <input type="search" class="form-control search-input" placeholder="Search your favourite food" aria-label="Search">
                 <span class="search-icon">
                   <span class="separator"></span>
@@ -85,11 +93,11 @@
         </div>
       </div>
     </header>
-     <div class="container d-flex flex-column justify-content-center align-items-center flex-grow-1 text-center hero-content">
+     <div class="container d-flex flex-column justify-content-center align-items-center flex-grow-1 text-center hero-content" data-aos="fade-down" data-aos-duration="1200">
       <h6 class="hero-title">The Best Kerala Restaurant in the heart of <span class="heading-highlight"> Edinburgh </span></h6>
       <img class="hero-logo img-fluid" src="assets/img/Group.png" alt="Hero Logo" class="mt-3">
     </div>
-    <div class="hero-buttons d-flex flex-column flex-md-row rounded-top-start">
+    <div class="hero-buttons d-flex flex-column flex-md-row rounded-top-start"  data-aos="fade-up" data-aos-delay="200">
       <button class="btn btn-primary btn-hero">Order Now</button>
       <button class="btn btn-outline-light btn-hero">Booking</button>
     </div>
@@ -104,63 +112,64 @@
     <div class="row align-items-center story">
   
       <div class="col-md-4 text-md-end text-center mb-3 mb-md-0">
-        <img class="story-logo" src="assets/img/ourstory.png"/>
+        <img class="story-logo" src="assets/img/ourstory.png" data-aos="zoom-in" data-aos-duration="1000"/>
       </div>
 
       <div class="col-md-1 d-none d-md-flex justify-content-center">
-        <div class="story-separator"></div>
+        <div class="story-separator" data-aos="fade-down" data-aos-delay="200"></div>
       </div>
 
 
       <div class="col-md-7 text-center text-md-start">
-        <p class="mb-3 story-text">
+        <p class="mb-3 story-text" data-aos="fade-left" data-aos-delay="400">
           Welcome to Awaafi Restaurant - Your Gateway to Exquisite Indian and Arabic Flavours!
           Located in the heart of Edinburgh, we bring authentic tastes of Kerala and the Middle East.
         </p>
-        <a href="#" class="btn btn-primary btn-story">More</a>
+        <a href="#" class="btn btn-primary btn-story" data-aos="zoom-in" data-aos-delay="600">More</a>
       </div>
     </div>
   </section>
 
   <!-- Our Vision Section -->
-  <section class="vision-section py-5">
+  <section class="vision-section py-5" data-aos="fade-up" data-aos-duration="200">
     <div class="container d-flex justify-content-center align-items-center">
-      <div class="vision-box p-4 p-md-5 text-center text-md-start">
-        <h2 class="mb-2 d-flex align-items-center justify-content-center gap-3 vision-heading">
+      <div class="vision-box p-4 p-md-5 text-center text-md-start" data-aos="zoom-in" data-aos-delay="300">
+        <h2 class="mb-2 d-flex align-items-center justify-content-center vision-heading" data-aos="fade-right" data-aos-delay="400">
           Our<img class="vision-logo img-fluid" src="assets/img/Vector.png" alt="Logo" > Vision
         </h2>
-        <p class="vision-text">
+        <p class="vision-text" data-aos="fade-left" data-aos-delay="400">
           At Awaafi, our vision is to blend the authentic tastes of Kerala and the Middle East
           into a culinary experience that brings people together. We honor tradition while embracing
           innovation, serving meals that are rich in culture, flavor, and love.
           At Awaafi, our vision is to blend the authentic tastes of Kerala and the Middle East
           into a culinary experience that brings people together. We honor tradition while embracing
           innovation, serving meals that are rich in culture, flavor, and love.
-          At Awaafi, our vision is to blend the authentic tastes of Kerala and the Middle East
-          into a culinary experience that brings people together. We honor tradition while embracing
-          innovation, serving meals that are rich in culture, flavor, and love.
+          
         </p>
       </div>
     </div>
   </section>
 
   <!-- Menu -->
-  <section class="long-section text-white py-5">
+  <section class="long-section text-white py-5" data-aos="fade-up" data-aos-duration="1000">
     <div class="container-fluid position-relative">
       <div class="vertical-left-text position-absolute">
         <h4 class="m-0">Feed your soul</h4>
       </div>
-      <div class="text-center mb-5">
-        <img src="assets/img/Awaafi-Restaurant-Edinburgh-outside.jpg" class="img-fluid rounded-4 awaafi-image" alt="Rectangle Image">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <video class="img-fluid rounded-4 awaafi-image" autoplay muted loop playsinline>
+          <source src="assets/img/awaafi-video.mp4" type="video/mp4" >
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div class=" row align-items-center text-dark mb-5 p-4 rounded">
         <div class="col-md-5 text-md-end text-center mb-3 mb-md-0">
-          <img class="story-logo" src="assets/img/Group-55.png"/>
+          <img class="story-logo" src="assets/img/Group-55.png" data-aos="zoom-in" data-aos-delay="300"/>
         </div>
-        <div class="col-md-1 d-none d-md-flex justify-content-center">
+        <div class="col-md-1 d-none d-md-flex justify-content-center" data-aos="fade-down" data-aos-delay="200">
           <div class="story-separator"></div>
         </div>
-        <div class="col-md-6 text-center text-md-start menu-text-box">
+        <div class="col-md-6 text-center text-md-start menu-text-box" data-aos="fade-left" data-aos-delay="400">
           <p class="mb-3 ">
             Discover the story of how our chefs blend traditional Kerala flavors with bold Arabic techniques to create something truly unforgettable.
           </p>
@@ -170,7 +179,7 @@
 
       <div class="row mb-5 justify-content-center d-flex">
         <div class="col-md-5 mb-4">
-          <div class="card h-100 text-dark">
+          <div class="card h-100 text-dark" data-aos="fade-right" data-aos-delay="200">
             <img src="assets/img/image 12.jpg" class="card-img-top image-fluid rounder-4" alt="Biryani">
             <div class="card-body text-center">
               <h3 class="card-title">MALABAR BIRIYANI</h3>
@@ -181,7 +190,7 @@
         </div>
 
         <div class="col-md-5 mb-4">
-          <div class="card h-100 text-dark">
+          <div class="card h-100 text-dark" data-aos="fade-left" data-aos-delay="400">
             <img src="assets/img/image 12.png" class="card-img-top image-fluid rounder-4" alt="Mandi">
             <div class="card-body text-center">
               <h3 class="card-title">ARABIC MANDI</h3>
@@ -192,8 +201,8 @@ One dish, two cultures, endless flavor.</p>
           </div>
         </div>
 
-        <div class="col-md-5 mb-4 d-lg-none">
-          <div class="card h-100 text-dark">
+        <div class="col-md-5 mb-4 d-lg-none" >
+          <div class="card h-100 text-dark" data-aos="fade-up" data-aos-delay="200">
             <img src="assets/img/image 13.png" class="card-img-top image-fluid rounder-4" alt="Biryani">
             <div class="card-body text-center">
               <h3 class="card-title">CHAI FOR THE SOUL</h3>
@@ -205,7 +214,7 @@ One dish, two cultures, endless flavor.</p>
         </div>
 
         <div class="col-md-5 mb-4 d-lg-none">
-          <div class="card h-100 text-dark">
+          <div class="card h-100 text-dark" data-aos="fade-down" data-aos-delay="400">
             <img src="assets/img/Screenshot 2025-05-03 at 7.13.16 AM 1.jpg" class="card-img-top image-fluid rounder-4" alt="Mandi">
             <div class="card-body text-center">
               <h3 class="card-title">ALFAHM</h3>
@@ -218,7 +227,7 @@ One dish, two cultures, endless flavor.</p>
       </div>
 
       <div class="card-wrapper">
-        <div class="row align-items-center mb-5 col-10 h-card">
+        <div class="row align-items-center mb-5 col-10 h-card" data-aos="fade-right" data-aos-delay="200">
           <div class="col-md-6 chai-text">
             <h3 class="card-title">CHAI FOR THE SOUL</h3>
             <p>At Awaafi, we pour Kerala’s heartbeat into every cup—spiced, strong, and soul-stirring. This isn’t just tea; it’s a cup of nostalgia, cardamom-spiced memories, and the warmth of a thousand street-side stories, brewed fresh in Edinburgh.  
@@ -231,7 +240,7 @@ One dish, two cultures, endless flavor.</p>
           
         </div>
 
-        <div class="row align-items-center mb-3 col-10 h-card">
+        <div class="row align-items-center mb-3 col-10 h-card" data-aos="fade-left" data-aos-delay="300">
           <div class="col-md-6 text-center p-0">
             <img src="assets/img/Screenshot 2025-05-03 at 7.13.16 AM 1.jpg" class="img-fluid rounded-4 object-fit-cover"  alt="Shawaya">
           </div>
@@ -254,15 +263,15 @@ One dish, two cultures, endless flavor.</p>
 
         <div class="col-lg-4 col-md-5 mb-4 mb-md-0">
           <div class="glass-card p-4 rounded catering-card">
-            <img src="assets/img/CATERING-LOGO.png" alt="Logo" class="mb-3 catering-logo">
-            <h2 class="mb-3 catering-heading text-center">CATERING ORDERS</h2>
-            <p class="catering-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore  magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum</p>
-            <a href="#" class ="btn btn-primary mt-3 position-relative">Order Now</a>
+            <img src="assets/img/CATERING-LOGO.png" alt="Logo" class="mb-3 catering-logo" data-aos="fade-left" data-aos-delay="200">
+            <h2 class="mb-3 catering-heading text-center" data-aos="zoom-in" data-aos-delay="400">CATERING ORDERS</h2>
+            <p class="catering-text" data-aos="fade-right" data-aos-delay="500">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore  magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum</p>
+            <a href="#" class ="btn btn-primary mt-3 position-relative" data-aos="fade-left" data-aos-delay="200">Order Now</a>
           </div>
         </div>
 
         <div class="col-md-7 col-lg-8 position-relative overflow-hidden r-0">
-          <div id="photoScroll" class="d-flex gap-3 overflow-auto image-strip pe-5">
+          <div id="photoScroll" class="d-flex gap-3 overflow-auto image-strip pe-5" data-aos="zoom-in" data-aos-delay="500">
             <img src="assets/img/IMG-20250515-WA0009.jpg" class="scroll-img" alt="Customer 1">
             <img src="assets/img/IMG-20250515-WA0010.jpg" class="scroll-img" alt="Customer 2">
             <img src="assets/img/IMG-20250515-WA0020.jpg" class="scroll-img" alt="Customer 3">
@@ -288,20 +297,43 @@ One dish, two cultures, endless flavor.</p>
       <h3 class="gallery-heading fw-bolder fs-1 mb-2 p-4">OUR GALLERY</h3>
 
       <!-- Scrollable container -->
-      <div id="galleryScroll" class="d-flex gap-3  gallery-wrapper">
-        <img src="assets/img/IMG-20250515-WA0016.jpg" class="gallery-img portrait" alt="Portrait 1">
-        <div class="d-flex flex-column gap-3">
-          <img src="assets/img/IMG-20250515-WA0012.jpg" class="gallery-img square" alt="Square 1">
-          <img src="assets/img/IMG-20250515-WA0018.jpg" class="gallery-img square" alt="Square 2">
-        </div>
-        <div class="d-flex flex-column gap-3">
-          <img src="assets/img/IMG-20250515-WA0021.jpg" class="gallery-img square" alt="Square 3">
-          <img src="assets/img/IMG-20250515-WA0013.jpg" class="gallery-img square" alt="Square 4">
-        </div>
-        <img src="assets/img/IMG-20250515-WA0015.jpg" class="gallery-img portrait" alt="Portrait 2">
-        <img src="assets/img/IMG-20250515-WA0022.jpg" class="gallery-img portrait" alt="Portrait 2">
-        <img src="assets/img/IMG-20250515-WA0025.jpg" class="gallery-img portrait" alt="Portrait 2">
+    <div id="galleryScroll" class="d-flex gap-3 gallery-wrapper">
+
+      <!-- Portrait -->
+      <a href="assets/img/IMG-20250515-WA0016.jpg" data-lightbox="gallery">
+        <img src="assets/img/IMG-20250515-WA0016.jpg" class="gallery-img portrait" alt="Portrait 1" data-aos="zoom-in" data-aos-delay="200">
+      </a>
+      <!-- 2 Squares -->
+      <div class="d-flex flex-column gap-3">
+        <a href="assets/img/IMG-20250515-WA0012.jpg" data-lightbox="gallery">
+          <img src="assets/img/IMG-20250515-WA0012.jpg" class="gallery-img square" alt="Square 1" data-aos="zoom-in" data-aos-delay="200">
+        </a>
+        <a href="assets/img/IMG-20250515-WA0018.jpg" data-lightbox="gallery">
+          <img src="assets/img/IMG-20250515-WA0018.jpg" class="gallery-img square" alt="Square 2" data-aos="zoom-in" data-aos-delay="200">
+        </a>
       </div>
+
+      <!-- 2 Squares -->
+      <div class="d-flex flex-column gap-3">
+        <a href="assets/img/IMG-20250515-WA0021.jpg" data-lightbox="gallery">
+          <img src="assets/img/IMG-20250515-WA0021.jpg" class="gallery-img square" alt="Square 3" data-aos="zoom-in" data-aos-delay="100">
+        </a>
+        <a href="assets/img/IMG-20250515-WA0013.jpg" data-lightbox="gallery">
+          <img src="assets/img/IMG-20250515-WA0013.jpg" class="gallery-img square" alt="Square 4" data-aos="zoom-in" data-aos-delay="100">
+        </a>
+      </div>
+
+      <!-- More Portraits -->
+      <a href="assets/img/IMG-20250515-WA0015.jpg" data-lightbox="gallery">
+        <img src="assets/img/IMG-20250515-WA0015.jpg" class="gallery-img portrait" alt="Portrait 2" data-aos="zoom-in" data-aos-delay="200">
+      </a>
+      <a href="assets/img/IMG-20250515-WA0022.jpg" data-lightbox="gallery">
+        <img src="assets/img/IMG-20250515-WA0022.jpg" class="gallery-img portrait" alt="Portrait 3" data-aos="zoom-in" data-aos-delay="200">
+      </a>
+      <a href="assets/img/IMG-20250515-WA0025.jpg" data-lightbox="gallery">
+        <img src="assets/img/IMG-20250515-WA0025.jpg" class="gallery-img portrait" alt="Portrait 4" data-aos="zoom-in" data-aos-delay="200">
+      </a>
+    </div>
 
       <!-- Arrows -->
       <button onclick="scrollGallery(-300)" class="gallery-arrow left-arrow btn btn-dark">
@@ -319,109 +351,79 @@ One dish, two cultures, endless flavor.</p>
     <div class="container-fluid px-5 position-relative ">
       <!-- Section heading -->
       <div class="row mb-4">
-        <div class="col-12">
+        <div class="col-12" data-aos="fade-up">
           <h6 class="review-heading">OUR CUSTOMERS</h6>
           <h2 class="fw-bold">Here’s what our satisfied <br>
             customers are saying</h2>
         </div>
       </div>
 
-      <div class="row align-items-start">
-        <!-- Left: Review cards -->
-        <div class="col-md-8 col-lg-9 col-sm-12 position-relative">
-          <div id="reviewScroll" class="d-flex flex-column gap-3 review-wrapper pe-3">
-
-            <!-- Review Card -->
-            <div class="card p-3 rounded-4 shadow-sm">
-              <p>"The food was incredibly delicious and arrived hot! Will order again."</p>
-              <small class="text-muted">– Rahul Ram</small>
-            </div>
-
-            <div class="card p-3 rounded-4 shadow-sm">
-              <p>"Best biryani in Edinburgh. Felt like I was back in Kerala!"</p>
-              <small class="text-muted">– Ayesha M.</small>
-            </div>
-
-            <div class="card p-3 rounded-4 shadow-sm">
-              <p>"Loved the Mandi! Authentic flavors and friendly staff."</p>
-              <small class="text-muted">– James L.</small>
-            </div>
-
-            <div class="card p-3 rounded-4 shadow-sm">
-              <p>"The chai is addictive. Highly recommend the Malabar combo!"</p>
-              <small class="text-muted">– Roma K.</small>
-            </div>
-
-            <!-- Add more reviews as needed -->
-          </div>
-
-          <button class="scroll-arrow up-arrow btn btn-light shadow-sm" onclick="scrollReviews(-150)">↑</button>
-          <button class="scroll-arrow down-arrow btn btn-light shadow-sm" onclick="scrollReviews(150)">↓</button>
-        </div>
-
-        <div class="testimonial-image col-md-4 col-lg-3 text-center mt-4 mt-md-0">
-          <img src="assets/img/Group-56.png" class="img-fluid rounded portrait-review" alt="Testimonial Photo" />
-        </div>
+      <div class="row align-items-start" data-aos="fade-up">
+        <script defer async src='https://cdn.trustindex.io/loader.js?eee62df4600055600206e88b77e'></script>
       </div>
     </div>
   </section>
 
   <!-- Map Section -->
-  <section class="map-section">
-    <div class="container">
-      <div class="position-relative rounded-4 shadow d-flex flex-column flex-md-row align-items-center">
-        
-        <div class="map-icon text-center position-absolute translate-middle bg-transparent">
-          <img src="assets/img/red-pin-with-large-letter-o-it 1.png" alt="Map Pin" width="150px" height="230px">
-        </div>
+   
+  <section class="map-section" data-aos="fade-up" data-aos-duration="1000">
+  <div class="container">
+    <div class="position-relative rounded-4 shadow d-flex flex-column flex-md-row align-items-center">
 
-
-        <div class="col-md-6 text-center col-sm-6 text-md-start rounded-4  map-left-box">
-          <h2 class="fw-bolder fs-1">We Are <br> <strong>Here</strong> </h2>
-          <p>108a-110a Gorgie Road, Edinburgh</p>
-          <a href="https://maps.google.com/maps?ll=55.938397,-3.230543&z=22&t=m&hl=en&gl=US&mapclient=embed&cid=1328543411101520946"
-            target="_blank" class="btn btn-light mt-2 img-fluid">
-            View in Large Map
-          </a>
-        </div>
-
-        <div class="col-md-6 col-sm-6 p-0 m-0 map-box">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.052646931837!2d-3.232717584140301!3d55.93838518060501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c70eeaa86929%3A0x126278637fc9ee82!2s110a%20Gorgie%20Rd%2C%20Edinburgh%20EH11%202NP!5e0!3m2!1sen!2suk!4v1683700281245!5m2!1sen!2suk" 
-            width="100%" height="100%" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy">
-          </iframe>
-        </div>
-        <!-- <div class="map-dust text-center translate-middle bg-transparent">
-          <img class="img-fluid" src="assets/img/dust 12.png" alt="">
-        </div> -->
+      <!-- Pin Icon Animation -->
+      <div class="map-icon text-center position-absolute translate-middle bg-transparent" 
+           data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/img/red-pin-with-large-letter-o-it 1.png" alt="Map Pin" width="150" height="230">
       </div>
+
+      <!-- Left Box -->
+      <div class="col-md-6 text-center col-sm-6 text-md-start rounded-4 map-left-box"
+           data-aos="fade-right" data-aos-delay="200">
+        <h2 class="fw-bolder fs-1">We Are <br><strong>Here</strong></h2>
+        <p>108a-110a Gorgie Road, Edinburgh</p>
+        <a href="https://maps.google.com/maps?ll=55.938397,-3.230543&z=22&t=m&hl=en&gl=US&mapclient=embed&cid=1328543411101520946"
+           target="_blank" class="btn btn-light mt-2 img-fluid">
+          View in Large Map
+        </a>
+      </div>
+
+      <!-- Map -->
+      <div class="col-md-6 col-sm-6 p-0 m-0 map-box"
+           data-aos="fade-left" data-aos-delay="300">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.052646931837!2d-3.232717584140301!3d55.93838518060501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c70eeaa86929%3A0x126278637fc9ee82!2s110a%20Gorgie%20Rd%2C%20Edinburgh%20EH11%202NP!5e0!3m2!1sen!2suk!4v1683700281245!5m2!1sen!2suk" 
+          width="100%" height="100%" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Callout Section with Scooter -->
   <section class="callout-section py-4 mt-4">
     <div class="container-fluid d-flex align-items-center justify-content-end  callout p-0">
 
-      <div class="scooter-img flex-shrink-0">
-        <img src="assets/img/hamburger-delivery-3d-rendering 2.png" alt="Scooter" class="img-fluid" >
+      <div class="scooter-img flex-shrink-0" >
+        <img src="assets/img/hamburger-delivery-3d-rendering 2.png" alt="Scooter" class="img-fluid" data-aos="fade-right" data-aos-delay="300">
       </div>
 
       <div class="flex-grow-1 px-4 py-3 d-flex justify-content-around align-items-center flex-wrap callout-box">
-        <p class="mb-2 mb-md-0 fw-semibold">
+        <p class="mb-2 mb-md-0 fw-semibold" data-aos="fade-left" data-aos-delay="200">
           Order online and get your food delivered to <br>your doorstep. Click to view our full menu!
         </p>
-        <a href="#" class="btn btn-primary">View Menu</a>
+        <a href="#" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="600">View Menu</a>
       </div>
 
     </div>
   </section>
 
   <!--====== FOOTER ONE PART START ======-->
-  <footer class="footer-area footer-one">
+  <footer class="footer-area footer-one" data-aos="fade-up">
     <div class="footer-widget">
         <div class="container-fluid p-5">
           <div class="footer-aligner row">
-              <div class="col-xl-4 col-lg-3 col-sm-12">
+              <div class="col-xl-4 col-lg-3 col-sm-12" data-aos="fade-up" data-aos-delay="100">
                 <div class="f-about">
                     <div class="footer-logo">
                       <a href="javascript:void(0)">
@@ -430,7 +432,7 @@ One dish, two cultures, endless flavor.</p>
                     </div>
                 </div>
               </div>
-              <div class="col-xl-2 col-lg-2 col-sm-4">
+              <div class="col-xl-2 col-lg-2 col-sm-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="footer-link">
                     <h6 class="footer-title">ABOUT</h6>
                     <ul>
@@ -443,7 +445,7 @@ One dish, two cultures, endless flavor.</p>
                 </div>
                 <!-- footer link -->
               </div>
-              <div class="col-xl-2 col-lg-3 col-sm-4">
+              <div class="col-xl-2 col-lg-3 col-sm-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="footer-link">
                     <h6 class="footer-title">TOP CUISINES</h6>
                     <ul>
@@ -457,7 +459,7 @@ One dish, two cultures, endless flavor.</p>
                 <!-- footer link -->
                 
               </div>
-              <div class="col-xl-2 col-lg-3 col-sm-4">
+              <div class="col-xl-2 col-lg-3 col-sm-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="footer-link">
                     <h6 class="footer-title">SOCIAL</h6>
                     <ul>
@@ -470,7 +472,7 @@ One dish, two cultures, endless flavor.</p>
                 </div>
                 <!-- End Footer Contact -->
               </div>
-              <div class="footer-app-store col-xl-2 col-lg-2 col-sm-4">
+              <div class="footer-app-store col-xl-2 col-lg-2 col-sm-4" data-aos="fade-up" data-aos-delay="500">
                     <h5 class="download-title">Download Our App Now!</h5>
                     <ul>
                       <li>
@@ -500,7 +502,7 @@ One dish, two cultures, endless flavor.</p>
     <div class="footer-copyright">
         <div class="container">
           <div class="row">
-              <div class="col-lg-12">
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
                 <div
                     class="
                     copyright
@@ -568,5 +570,18 @@ One dish, two cultures, endless flavor.</p>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+      once: true
+    });
+  </script>
+  <!-- Lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+
 </body>
 </html>
