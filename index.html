@@ -601,39 +601,39 @@ One dish, two cultures, endless flavor.</p>
       container.scrollTop += direction * scrollAmount;
     }
   </script>
-  <script>
-    
-    const gallery = document.getElementById("galleryScroll");
+<script>
+  const gallery = document.getElementById("galleryScroll");
 
+  let scrollAmount = 0;
+  const scrollStep = 300;
+  const scrollDelay = 3000;
 
+  // Declare the interval reference so it can be cleared later
+  let autoScroll = setInterval(autoScrollGallery, scrollDelay);
 
+  function autoScrollGallery() {
+    if (!gallery) return;
 
-    let scrollAmount = 0;
-    const scrollStep = 300;
-    const scrollDelay = 3000;
+    scrollAmount += scrollStep;
 
-    function autoScrollGallery() {
-      if (!gallery) return;
-      
-      scrollAmount += scrollStep;
-
-      if (scrollAmount >= gallery.scrollWidth - gallery.clientWidth) {
-        scrollAmount = 0;
-      }
-
-      gallery.scrollTo({
-        left: scrollAmount,
-        behavior: "smooth"
-      });
+    if (scrollAmount >= gallery.scrollWidth - gallery.clientWidth) {
+      scrollAmount = 0;
     }
+
+    gallery.scrollTo({
+      left: scrollAmount,
+      behavior: "smooth"
+    });
+  }
+
+  // Pause on hover (desktop only)
+  if (window.innerWidth > 768) {
     gallery.addEventListener('mouseenter', () => clearInterval(autoScroll));
     gallery.addEventListener('mouseleave', () => {
       autoScroll = setInterval(autoScrollGallery, scrollDelay);
     });
-  </script>
-
-
-
+  }
+</script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- AOS JS -->
