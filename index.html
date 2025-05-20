@@ -273,10 +273,16 @@ One dish, two cultures, endless flavor.</p>
 
         <div class="col-md-7 col-lg-8 position-relative overflow-hidden r-0">
           <div id="photoScroll" class="d-flex gap-3 overflow-auto image-strip pe-5" data-aos="zoom-in" data-aos-delay="500">
-            <img src="assets/img/IMG-20250515-WA0009.jpg" class="scroll-img" alt="Customer 1">
-            <img src="assets/img/IMG-20250515-WA0010.jpg" class="scroll-img" alt="Customer 2">
-            <img src="assets/img/IMG-20250515-WA0020.jpg" class="scroll-img" alt="Customer 3">
-            <img src="assets/img/IMG-20250515-WA0021.jpg" class="scroll-img" alt="Customer 4">
+            <!-- <video src="assets/img/catering-v1.mp4" class="scroll-img" alt="Customer 1"> -->
+            <video class="img-fluid scroll-img" autoplay muted loop playsinline>
+              <source src="assets/img/catering-v1.mp4" type="video/mp4" >
+            </video>
+            <video class="img-fluid scroll-img" autoplay muted loop playsinline>
+              <source src="assets/img/catering-v2.mp4" type="video/mp4" >
+              Your browser does not support the video tag.
+            </video>
+            <img src="assets/img/catering-1.jpg" class="scroll-img" alt="Customer 2">
+            <img src="assets/img/catering-2.jpg" class="scroll-img" alt="Customer 4">
           </div>
 
 
@@ -333,6 +339,40 @@ One dish, two cultures, endless flavor.</p>
       </a>
       <a href="assets/img/IMG-20250515-WA0025.jpg" data-lightbox="gallery">
         <img src="assets/img/IMG-20250515-WA0025.jpg" class="gallery-img portrait" alt="Portrait 4" data-aos="zoom-in" data-aos-delay="200">
+      </a>
+
+      <div class="d-flex flex-column gap-3">
+        <a href="assets/img/IMG-20250515-WA0010.jpg" data-lightbox="gallery">
+          <img src="assets/img/IMG-20250515-WA0010.jpg" class="gallery-img square" alt="Square 3" data-aos="zoom-in" data-aos-delay="100">
+        </a>
+        <a href="assets/img/IMG-20250515-WA0009.jpg" data-lightbox="gallery">
+          <img src="assets/img/IMG-20250515-WA0009.jpg" class="gallery-img square" alt="Square 4" data-aos="zoom-in" data-aos-delay="100">
+        </a>
+      </div>
+      <a href="assets/img/IMG-20250515-WA0021.jpg" data-lightbox="gallery">
+        <img src="assets/img/IMG-20250515-WA0021.jpg" class="gallery-img portrait" alt="Portrait 3" data-aos="zoom-in" data-aos-delay="200">
+      </a>
+      <a href="assets/img/IMG-20250515-WA0024.jpg" data-lightbox="gallery">
+        <img src="assets/img/IMG-20250515-WA0024.jpg" class="gallery-img portrait" alt="Portrait 4" data-aos="zoom-in" data-aos-delay="200">
+      </a>
+      <div class="d-flex flex-column gap-3">
+        <a href="assets/img/IMG-20250515-WA0020.jpg" data-lightbox="gallery">
+          <img src="assets/img/IMG-20250515-WA0020.jpg" class="gallery-img square" alt="Square 3" data-aos="zoom-in" data-aos-delay="100">
+        </a>
+        <a href="assets/img/IMG-20250515-WA0019.jpg" data-lightbox="gallery">
+          <img src="assets/img/IMG-20250515-WA0019.jpg" class="gallery-img square" alt="Square 4" data-aos="zoom-in" data-aos-delay="100">
+        </a>
+      </div>
+      <div class="d-flex flex-column gap-3">
+        <a href="assets/img/IMG-20250515-WA0017.jpg" data-lightbox="gallery">
+          <img src="assets/img/IMG-20250515-WA0017.jpg" class="gallery-img square" alt="Square 3" data-aos="zoom-in" data-aos-delay="100">
+        </a>
+        <a href="assets/img/IMG-20250515-WA0011.jpg" data-lightbox="gallery">
+          <img src="assets/img/IMG-20250515-WA0011.jpg" class="gallery-img square" alt="Square 4" data-aos="zoom-in" data-aos-delay="100">
+        </a>
+      </div>
+      <a href="assets/img/IMG-20250515-WA0010.jpg" data-lightbox="gallery">
+        <img src="assets/img/IMG-20250515-WA0010.jpg" class="gallery-img portrait" alt="Portrait 4" data-aos="zoom-in" data-aos-delay="200">
       </a>
     </div>
 
@@ -413,7 +453,7 @@ One dish, two cultures, endless flavor.</p>
         <p class="mb-2 mb-md-0 fw-semibold" data-aos="fade-left" data-aos-delay="200">
           Order online and get your food delivered to <br>your doorstep. Click to view our full menu!
         </p>
-        <a href="#" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="600">View Menu</a>
+        <a href="#" class="btn btn-light" data-aos="zoom-in" data-aos-delay="600">View Menu</a>
       </div>
 
     </div>
@@ -562,11 +602,36 @@ One dish, two cultures, endless flavor.</p>
     }
   </script>
   <script>
-    function scrollGallery(offset) {
-      const scrollContainer = document.getElementById('galleryScroll');
-      scrollContainer.scrollLeft += offset;
+    
+    const gallery = document.getElementById("galleryScroll");
+
+
+
+
+    let scrollAmount = 0;
+    const scrollStep = 300;
+    const scrollDelay = 3000;
+
+    function autoScrollGallery() {
+      if (!gallery) return;
+      
+      scrollAmount += scrollStep;
+
+      if (scrollAmount >= gallery.scrollWidth - gallery.clientWidth) {
+        scrollAmount = 0;
+      }
+
+      gallery.scrollTo({
+        left: scrollAmount,
+        behavior: "smooth"
+      });
     }
+    gallery.addEventListener('mouseenter', () => clearInterval(autoScroll));
+    gallery.addEventListener('mouseleave', () => {
+      autoScroll = setInterval(autoScrollGallery, scrollDelay);
+    });
   </script>
+
 
 
 

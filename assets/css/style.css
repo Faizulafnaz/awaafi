@@ -1,5 +1,5 @@
   :root {
-  --primary: #FFB107;
+  --primary: rgba(228, 165, 27, 0.8);;
   --secondary: #F4F9FD;
   --bg-primary: #000000;
   --bg-card: #1B1A1A;
@@ -26,7 +26,8 @@ p{
 }
 
 .btn-primary{
-  background-color: var(--primary);
+  background: rgba(228, 165, 27, 0.8);
+
   padding: 4px;
 
 }
@@ -37,7 +38,7 @@ p{
 }
 
 .btn-primary:hover{
-  background-color: var(--secondary);
+  background: var(--secondary);
   color: black;
 }
 
@@ -55,7 +56,9 @@ p{
 
   .navbar{
     height: 100px;
-      padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    z-index: 1050;
   }
 
   .nav-link {
@@ -65,6 +68,7 @@ p{
     font-family: 'Saira Extra Condensed', sans-serif;
     letter-spacing: 2px;
     font-size: 20px;
+    z-index: 1050;
   }
 
   .nav-link-wrapper{
@@ -96,6 +100,11 @@ p{
   .nav-link.active::after {
     transform: scaleX(1);
     color: var(--primary);
+  }
+
+  .search-form{
+    position: relative;
+    z-index: 1050;
   }
 
   .search-input {
@@ -273,8 +282,6 @@ p{
   }
 
 @media (max-width: 1266px) {
-
-
   .hero-buttons {
     width: 100%;
     height: auto;
@@ -793,15 +800,30 @@ p{
 }
 
 
+/* gallery section */
+
+
 .gallery-wrapper {
+  display: flex; /* Add this */
   scroll-behavior: smooth;
-  white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
   padding-bottom: 10px;
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  scroll-snap-type: x mandatory; /* Add this */
+  -webkit-overflow-scrolling: touch;
+  gap: 1.5rem;
 }
+
+.gallery-wrapper a,
+.gallery-wrapper > div {
+  scroll-snap-align: center;
+  flex-shrink: 0;
+}
+
+
 
 .gallery-img {
   object-fit: cover;
@@ -930,7 +952,7 @@ p{
 }
 
 .map-left-box{
-  background-color: var(--primary);
+  background: var(--primary);
   padding: 46px;
 
 }
@@ -1010,7 +1032,7 @@ p{
 }
 
 .callout-box{
-  background-color: var(--primary);
+  background: var(--primary);
   
   
 }
