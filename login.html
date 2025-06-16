@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awaafi Restaurant</title>
+
+      <!-- Bootstrap CSS -->
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/loginStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navbar and Hero section -->
+  <div class="container-fluid hero-section">
+    <!-- ----------  Header / navbar  ---------- -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <!--  Logo + toggler  -->
+          <a class="navbar-brand p-3" href="#">
+            <img src="assets/img/logo.png" alt="Logo" class="logo img-fluid" height="40">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--  Collapsible links  -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!--  Mobile search (visible below lg)  -->
+            <form class="d-block d-lg-none mt-3 w-100 position-relative" role="search" style="margin-bottom:23px;">
+              <input class="form-control search-input" type="search" placeholder="Search your favourite food">
+              <span class="search-icon"><span class="separator"></span><i class="bi bi-search"></i></span>
+            </form>
+
+            <!--  Desktop / mobile nav items  -->
+            <ul class="navbar-nav ms-auto nav-link-wrapper">
+              <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://edinburgh.awaafi.co.uk/Menu">Login menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">DEALS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">GET IN TOUCH</a></li>
+              <li class="nav-item">
+                <a class="nav-link"
+                   href="https://www.google.com/maps/reserve/v/dine/c/pNL_zZxUSP4?...">BOOKING</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">REVIEW</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ----------  End navbar  ---------- -->
+
+    <!-- ----------  Login card  ---------- -->
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-md-6 col-lg-5">
+          <div class="p-4 p-md-5 bg-white shadow rounded-4" style="margin-top:50px;">
+            <!--  Title  -->
+            <div class="text-center">
+              <h3 class="mb-3 fw-bold text-dark">Welcome back</h3>
+              <p class="mb-4 text-muted small">Log in your account</p>
+            </div>
+
+            <!--  Form  -->
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label small">Email/Mobile</label>
+                <input id="email" type="email" class="form-control custom-input"
+                       placeholder="Enter your email or mobile">
+              </div>
+
+              <div class="mb-3">
+                <label for="password" class="form-label small d-flex justify-content-between">
+                  <span>Password</span>
+                </label>
+                <input id="password" type="password" class="form-control custom-input"
+                       placeholder="Enter password">
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="form-check mb-0">
+                  <input id="rememberMe" class="form-check-input" type="checkbox">
+                  <label class="form-check-label text-black small" for="rememberMe">Remember me</label>
+                </div>
+                <a href="#" class="text-decoration-none small text-black">Forgot Password?</a>
+              </div>
+
+              <button type="submit" class="btn btn-warning w-100 fw-semibold">LOG IN</button>
+
+              <div class="text-center my-3 text-muted small">or continue with</div>
+
+              <button type="button"
+                      class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center gap-2">
+                <img src="/assets/img/google-img.png" alt="Google Icon" style="height:20px;width:20px;">
+                Continue with Google
+              </button>
+
+              <p class="mt-4 text-center text-muted small">
+                Don't have an account?
+                <a href="#" class="fw-bold text-decoration-none text-black small">Sign up here</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------  End login card  ---------- -->
+
+
+
+
+
+
+  </div>
+  <!-- End hero Section -->
+
+
+
+
+
+ 
+
+  <!--====== FOOTER ONE PART START ======-->
+  <footer class="footer-area footer-one" data-aos="fade-up">
+    <div class="footer-widget">
+        <div class="container-fluid p-5">
+          <div class="footer-aligner row">
+              <div class="col-xl-4 col-lg-3 col-sm-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="f-about">
+                    <div class="footer-logo">
+                      <a href="javascript:void(0)">
+                      <img class="img-fluid" src="assets/img/Layer_1.png" alt="Logo" />
+                      </a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2 col-sm-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="footer-link">
+                    <h6 class="footer-title">ABOUT</h6>
+                    <ul>
+                      <li><a href="javascript:void(0)">Menu</a></li>
+                      <li><a href="javascript:void(0)">Deals</a></li>
+                      <li><a href="javascript:void(0)">Review</a></li>
+                      <li><a href="javascript:void(0)">Our story</a></li>
+                      <li><a href="javascript:void(0)">Get in touch</a></li>
+                    </ul>
+                </div>
+                <!-- footer link -->
+              </div>
+              <div class="col-xl-2 col-lg-3 col-sm-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="footer-link">
+                    <h6 class="footer-title">TOP CUISINES</h6>
+                    <ul>
+                      <li><a href="javascript:void(0)">Awaafi Grills</a></li>
+                      <li><a href="javascript:void(0)">Awaafi Combos</a></li>
+                      <li><a href="javascript:void(0)">Arabic Specials</a></li>
+                      <li><a href="javascript:void(0)">South Indian Dish</a></li>
+                      <li><a href="javascript:void(0)">Dessert & ice creams</a></li>
+                    </ul>
+                </div>
+                <!-- footer link -->
+                
+              </div>
+              <div class="col-xl-2 col-lg-3 col-sm-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="footer-link">
+                    <h6 class="footer-title">SOCIAL</h6>
+                    <ul>
+                      <li><a href="javascript:void(0)">YouTube</a></li>
+                      <li><a href="javascript:void(0)">Instagram</a></li>
+                      <li><a href="javascript:void(0)">Whatsapp</a></li>
+                      <li><a href="javascript:void(0)">Faceboon</a></li>
+                      <li><a href="javascript:void(0)" class="text-dark" >-</a></li>
+                    </ul>
+                </div>
+                <!-- End Footer Contact -->
+              </div>
+              <div class="footer-app-store col-xl-2 col-lg-2 col-sm-4" data-aos="fade-up" data-aos-delay="500">
+                    <h5 class="download-title">Download Our App Now!</h5>
+                    <ul>
+                      <li>
+                          <a href="javascript:void(0)">
+                          <img
+                            src="https://cdn.ayroui.com/1.0/images/footer/app-store.svg"
+                            alt="app"
+                            />
+                          </a>
+                      </li>
+                      <li>
+                          <a href="javascript:void(0)">
+                          <img
+                            src="https://cdn.ayroui.com/1.0/images/footer/play-store.svg"
+                            alt="play"
+                            />
+                          </a>
+                      </li>
+                    </ul>
+                </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+    </div>
+    <!-- footer widget -->
+    <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+                <div
+                    class="
+                    copyright
+                    text-center
+                    d-md-flex
+                    justify-content-between
+                    align-items-center
+                    "
+                    >
+                    <p class="text">01315639455</p>
+                    <p class="text">108a-110a Gorgie Road, EDINBURGH </p>
+                    <ul class="social">
+                      <li>
+                          <a href="javascript:void(0)">
+                          <i class="lni lni-facebook-filled"></i>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="javascript:void(0)">
+                          <i class="lni lni-twitter-original"></i>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="javascript:void(0)">
+                          <i class="lni lni-instagram-filled"></i>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="javascript:void(0)"
+                            ><i class="lni lni-linkedin-original"></i
+                            ></a>
+                      </li>
+                    </ul>
+                </div>
+                <!-- copyright -->
+              </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+    </div>
+    <!-- footer copyright -->
+  </footer>
+  <!--====== FOOTER ONE PART ENDS ======-->
+  <script>
+    function scrollCateringGallery(offset) {
+      const gallery = document.getElementById('photoScroll');
+      gallery.scrollLeft += offset;
+    }
+  </script>
+  <script>
+    function scrollTestimonials(direction) {
+      const container = document.getElementById('testimonialContainer');
+      const scrollAmount = 100;
+      container.scrollTop += direction * scrollAmount;
+    }
+  </script>
+<script>
+  const gallery = document.getElementById("galleryScroll");
+
+  let scrollAmount = 0;
+  const scrollStep = 300;
+  const scrollDelay = 3000;
+
+  // Declare the interval reference so it can be cleared later
+  let autoScroll = setInterval(autoScrollGallery, scrollDelay);
+
+  function autoScrollGallery() {
+    if (!gallery) return;
+
+    scrollAmount += scrollStep;
+
+    if (scrollAmount >= gallery.scrollWidth - gallery.clientWidth) {
+      scrollAmount = 0;
+    }
+
+    gallery.scrollTo({
+      left: scrollAmount,
+      behavior: "smooth"
+    });
+  }
+
+  // Pause on hover (desktop only)
+  if (window.innerWidth > 768) {
+    gallery.addEventListener('mouseenter', () => clearInterval(autoScroll));
+    gallery.addEventListener('mouseleave', () => {
+      autoScroll = setInterval(autoScrollGallery, scrollDelay);
+    });
+  }
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+      once: true
+    });
+  </script>
+  <!-- Lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+
+</body>
+</html>
