@@ -393,7 +393,10 @@ p{
 
 
 
-
+.login-card {
+  max-height: 90vh;
+  overflow-y: auto;
+}
 
 .custom-input {
   border: none;

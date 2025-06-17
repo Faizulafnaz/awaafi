@@ -74,28 +74,25 @@
     <!-- ----------  End navbar  ---------- -->
 
     <!-- ----------  Login card  ---------- -->
-    <div class="container">
-      <div class="row justify-content-end">
+    <div class="container mt-0 ">
+      <div class="container d-flex align-items-center justify-content-end min-vh-100 ">
         <div class="col-md-6 col-lg-5">
-          <div class="p-4 p-md-5 bg-white shadow rounded-4" style="margin-top:50px;">
+          <div class="p-4 p-md-5 bg-white shadow rounded-4 login-card">
             <!--  Title  -->
             <div class="text-center">
-              <h3 class="mb-3 fw-bold text-dark">Welcome back</h3>
+              <h3 class="mb-1 fw-bold text-dark">Welcome back</h3>
               <p class="mb-4 text-muted small">Log in your account</p>
             </div>
 
             <!--  Form  -->
             <form>
               <div class="mb-3">
-                <label for="email" class="form-label small">Email/Mobile</label>
                 <input id="email" type="email" class="form-control custom-input"
                        placeholder="Enter your email or mobile">
               </div>
 
               <div class="mb-3">
-                <label for="password" class="form-label small d-flex justify-content-between">
-                  <span>Password</span>
-                </label>
+
                 <input id="password" type="password" class="form-control custom-input"
                        placeholder="Enter password">
               </div>
@@ -108,7 +105,11 @@
                 <a href="#" class="text-decoration-none small text-black">Forgot Password?</a>
               </div>
 
-              <button type="submit" class="btn btn-warning w-100 fw-semibold">LOG IN</button>
+ <button type="submit" class="btn btn-warning w-100 fw-semibold">
+  <span class="text-white small">
+    LOG IN
+  </span>
+</button>
 
               <div class="text-center my-3 text-muted small">or continue with</div>
 
