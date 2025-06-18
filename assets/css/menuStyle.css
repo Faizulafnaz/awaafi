@@ -209,16 +209,13 @@ p{
 
 /* Hero section */
 
-.hero-section {
-  position: relative;
-  min-height: 100vh; /* use min-height so it grows if content is taller */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-}
-
+  .hero-section{
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/menu-page.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 
   .hero-section::before {
   content: "";
@@ -231,16 +228,7 @@ p{
   z-index: 2;
 }
 
-  .hero-section::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 1.2), transparent); /* adjust opacity as needed */
-  z-index: 2;
-}
+
 
   .hero-title{
     font-family: 'Montserrat', sans-serif;
@@ -396,49 +384,10 @@ p{
 
 
 
-/*===== Contact Us section =====*/
-
-.limited-width-text {
-  max-width: 450px; /* adjust as needed */
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; /* or center if you prefer */
+.login-card {
+  max-height: 90vh;
+  overflow-y: auto;
 }
-
-
-.connect-us {
-  position: relative;
-  min-height: auto;
-  padding: 40px 0; /* Reduced top/bottom gap */
-  background-image: url("../img/connect-us-img(1).jpg");
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.connect-us::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); 
-  z-index: 2;
-}
-
-.connect-us > * {
-  position: relative;
-  z-index: 3;
-}
-
-
-form.custom-form {
-  min-height: 500px; /* adjust as needed */
-  
-}
-
 
 .custom-input {
   border: none;
@@ -458,170 +407,22 @@ form.custom-form {
 
 
 
-
-/*===== Contact Us section ends =====*/
-
-/* ///////////////////////////////////////////////////////////////////////////////////////// */
-.address-section {
-  width: 100%;
-  height: 450px;
-  background-color: black;
-  display: flex;
-  align-items: flex-start;
-}
-
-.address-header {
-  width: 20%;
-  background-color: black;
-  color: white;
-  padding: 1rem;
-  height: 80%;
-  box-sizing: border-box;
-}
-
-.yellow-section {
-  width: 80%;
-  background-color: #FFB012;
-  color: black;
-  padding: 1rem;
-  height: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Vertical center */
-  gap: 1rem;
-  box-sizing: border-box;
-  flex-wrap: wrap; /* Responsive wrap on smaller screens */
-}
-
-.address-text {
-  flex: 1 1 300px; /* Shrinks or grows as needed */
-
-}
-.address-text-p{
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.map-container {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center; /* Horizontally center the image */
-  align-items: center;     /* Vertically center the image */
-}
-
-.map-container img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-
-
-/* ///////////////////////////////////////////////////////////////////////////////////////// */
-/*===== address secton =====*/
-.address-wrapper {
-  position: relative;
-  background-color: black;
-  overflow: hidden;
-  padding: 2rem 0;
-  min-height: 400px; /* Increased to allow black area below */
+.divider-with-text {
   display: flex;
   align-items: center;
+  text-align: center;
+  color: #032e53; /* Bootstrap muted color */
+  font-size: 0.85rem; /* small */
 }
 
-/* Left: Heading block */
-.left-heading {
-  z-index: 2;
-  min-width: 250px;
-  padding-left: 2rem;
-  padding-right: 2rem;
+.divider-with-text::before,
+.divider-with-text::after {
+  content: "";
+  flex: 1;
+  border-top: 4px solid #ccc;
+  margin: 0 10px;
 }
 
-/* Right: Yellow box */
-.right-yellow-box {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  background-color: #ffc107;
-  display: flex;
-  flex-direction: row;
-  padding: 2rem; /* inner padding for spacing */
-  width: 4/5;
-  margin-top: 0px;
-  margin-bottom: 16px; /* show black below the box */
-}
-
-/* Image styling */
-.map-image {
-  padding-left: 1.5rem; /* spacing between text and image */
-}
-
-.map-image img {
-  display: block;
-  width: 600px;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* effective deep shadow */
-}
-
-
-
-/*===== address secton ends =====*/
-
-
-/*===== price checker =====*/
-
-.price-checker {
-  position: relative;
-  background-image: url("../img/price-checker.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.price-checker .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Slight black transparency */
-  z-index: 1;
-}
-
-.price-checker .content {
-  z-index: 2;
-  max-width: 800px;
-}
-
-.transparent-input {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid #fff;
-  color: #fff;
-  font-weight: 500;
-}
-
-.transparent-input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.transparent-input:focus {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  outline: none;
-  box-shadow: none;
-  border-color: #ffc107;
-}
-
-
-/*===== price checker ends =====*/
 
 
 

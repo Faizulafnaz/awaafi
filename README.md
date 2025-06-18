@@ -1,7 +1,9 @@
 readme file
 
-signup.html
+signup.html  completed
 
-login.html
+login.html  - completed
 
-basket.html
+basket.html - completed
+contact-us.html - completed (small edited needed)
+menu.html (working on it)
