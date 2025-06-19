@@ -209,22 +209,33 @@ p{
 
 /* Hero section */
 
-  .hero-section{
-    position: relative;
-    height: 100vh;
-    background-image: url("../img/menu-page.jpg");
-    background-size: cover;
-    background-position: center;
-  }
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/menu-page.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
-  .hero-section::before {
+/* Optional gradient overlays */
+.hero-section::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 150px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1.2), transparent); /* adjust opacity as needed */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1.2), transparent);
+  z-index: 2;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
   z-index: 2;
 }
 
@@ -383,47 +394,709 @@ p{
 }
 
 
+/*  =========== Hero section text starts =============== */
 
-.login-card {
-  max-height: 90vh;
-  overflow-y: auto;
+/* Move content to bottom-left */
+.hero-content {
+  position: absolute;
+  bottom: 1%;     /* distance from bottom */
+  left: 5%;         /* distance from left */
+  z-index: 3;
+  max-width: 500px;
+  height: 350px;
+  color: white;
 }
 
-.custom-input {
+/* Headline styling */
+.hero-content h1 {
+  font-size: 2.8rem;
+  line-height: 1.3;
+}
+.hero-description{
+  font-size: 0.8rem;
+}
+
+.hero-content .text-warning {
+  color: #FFB012 !important;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 0.5%; /* or even 0 if needed */
+  left: 5%;
+  z-index: 3;
+  max-width: 500px;
+  color: white;
+}
+
+
+/* Headline styling */
+.hero-content h1 {
+  font-size: 2.8rem;
+  line-height: 1.3;
+}
+
+
+.hero-content .text-warning {
+  color: #FFB012 !important;
+}
+
+.hero-description {
+  font-size: 0.8rem;
+  margin-bottom: 0; /* Remove default margin */
+}
+
+.hero-search {
+  margin-top: 1rem;  /* reduce this if needed */
+}
+
+
+.hero-search .search-box {
+  padding: 0.75rem 1rem;
+  padding-right: 3rem;
   border: none;
-  border-bottom: 1px solid #ccc;
-  border-radius: 0;
-  box-shadow: none;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.custom-input:focus {
-  border-bottom: 2px solid #000; /* You can change the focus color */
+  border-radius: 30px;
+  width: 100%;
+  font-size: 1rem;
   outline: none;
-  box-shadow: none;
+}
+
+.hero-search .search-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 1.2rem;
 }
 
 
-
-
-.divider-with-text {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #032e53; /* Bootstrap muted color */
-  font-size: 0.85rem; /* small */
+.hero-search .search-box {
+  padding: 0.75rem 1rem;
+  padding-right: 3rem;
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
 }
 
-.divider-with-text::before,
-.divider-with-text::after {
+.hero-search .search-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+
+/*  =========== Hero section text ends =============== */
+
+
+/*  =========== Hero section text ends =============== */
+.menu-section {
+  background-color: #F8AF01;
+}
+
+.menu-title {
+
+  font-size: 5.5rem; /* Large title */
+}
+
+    .scrolling-wrapper {
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .scroll-item {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 10px;
+      font-weight: 700;
+      font-size: 20px;
+      color: #ffffff;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .scroll-item:hover {
+    background-color: #f8af00;
+    color: black;
+    border-bottom: #ffffff 2px solid;
+    transition: background-color 0.3s, color 0.3s;
+    }
+
+    .scroll-item.active {
+    background-color: #050400;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    }
+
+    .scrolling-wrapper::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrolling-wrapper {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+
+/*  =========== Hero section text ends =============== */
+
+
+/*  =========== Hero section text ends =============== */
+
+
+/*  =========== menu card one start =============== */
+.section-one-title {
+  display: inline-block; /* Keeps the text inline but allows border */
+  position: relative;
+  padding-bottom: 0.5rem;
+  color: #f8af00;
+}
+.section-one-title-wrapper{
+  border-bottom: 2px solid #f8af00;
+
+}
+
+.section-title::after {
   content: "";
-  flex: 1;
-  border-top: 4px solid #ccc;
-  margin: 0 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw; /* or 100% of container */
+  height: 3px;
+  background-color: #ffc107; /* or any other color */
+  z-index: -1;
+}
+
+.menu-card-one {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden; /* Hide overflowing rotated image parts */
+}
+
+.menu-card-one::before,
+.menu-card-one::after {
+  content: '';
+  position: absolute;
+  background-image: url('../img/cardOne-appetisers/cardOneBG.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 600px;  /* Adjust as needed */
+  height: 600px; /* Adjust as needed */
+  opacity: 0.3;  /* Optional: subtle background look */
+}
+
+.menu-card-one::before {
+  top: -10px;
+  left: -50px;
+  transform: rotate(65deg);
+}
+
+.menu-card-one::after {
+  bottom: -50px;
+  right: -50px;
+  transform: rotate(25deg);
 }
 
 
+/* image card */
+.custom-card {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 2; /* Above the background image */
+
+}
+
+.card-image-section {
+  position: relative;
+}
+
+.image-fixed-size {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* White semi-rounded container */
+.icon-container {
+  width: 50px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 0.3rem;
+  bottom: 0px;
+  right: 0px;
+}
+
+/* Circular dark '+' icon inside */
+.add-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #050505;
+}
+
+
+/*  =========== menu card one end =============== */
+
+/*  =========== menu card two start =============== */
+/* sub one  */
+.menu-card-two-sub-one {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding-top: 2rem; /* additional spacing from top */
+}
+.section-one-title-two-wrapper{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* Responsive Title Image */
+.title-img {
+  max-height: 70px;
+  width: 100%;
+  height: auto;
+}
+
+/* Inclined Dish Icon */
+.dish-icon {
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  height: 200px;
+  transform: rotate(-10deg);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .dish-icon {
+    height: 140px;
+    right: -20px;
+    top: -30px;
+    transform: rotate(-5deg);
+  }
+
+  .title-img {
+    max-height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dish-icon {
+    height: 100px;
+    right: -10px;
+    top: -20px;
+    transform: rotate(0deg);
+  }
+
+  .title-img {
+    max-height: 40px;
+  }
+}
+
+/* sub two */
+.menu-card-two-sub-two {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden; /* Hide overflowing rotated image parts */
+}
+
+.menu-card-two-sub-two::before{
+  content: '';
+  position: absolute;
+  background-image: url('../img/menuTwo/title-img.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 600px;  /* Adjust as needed */
+  height: 600px; /* Adjust as needed */
+  opacity: 0.2;  /* Optional: subtle background look */
+}
+
+.menu-card-two-sub-two::before {
+  top: -50px;
+  left: -50px;
+  transform: rotate(65deg);
+}
+
+/*  =========== menu card two end =============== */
+
+
+/*  =========== menu card three start =============== */
+.menu-card-three {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden; /* Hide overflowing rotated image parts */
+}
+/*  =========== menu card three end =============== */
+
+/*  =========== menu card four start =============== */
+.menu-card-four {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto; /* Content-driven height */
+  min-height: 1200px; /* Ensure both images are visible */
+  position: relative;
+  overflow: hidden;
+  padding-top: 5rem;  /* Optional spacing for content */
+  padding-bottom: 5rem;
+}
+
+/* Top Center Image */
+.menu-card-four::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url('../img/menuFour/menuFourImgOne.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 1000px;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+/* Bottom Right Image */
+.menu-card-four::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url('../img/menuFour/menuFourImgTwo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 600px;
+  transform: rotate(-20deg);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.card-title{
+  font-size: 16px;
+  font-weight: 700;
+}
+.card-body{
+  padding: 20px;
+}
+
+.card-description{
+  font-size: 10px;
+  font-weight: 400;
+  color: #1b1501;
+}
+
+.card-list-title{
+  font-size: 14px;
+  font-weight: 600;
+
+}
+.card-list-icon{
+  font-size: 22px;
+  font-weight: 900;
+}
+
+@media (max-width: 992px) {
+  .menu-card-four {
+    min-height: 1000px;
+  }
+
+  .menu-card-four::before {
+    width: 700px;
+    height: 700px;
+  }
+
+  .menu-card-four::after {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-card-four {
+    min-height: 900px;
+  }
+
+  .menu-card-four::before {
+    width: 500px;
+    height: 500px;
+  }
+
+  .menu-card-four::after {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+
+
+/*  =========== menu card four end =============== */
+
+
+/*  =========== menu card five start =============== */
+.menu-card-five-two {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto; /* Content-driven height */
+  min-height: 1000px; /* Ensure both images are visible */
+  position: relative;
+  overflow: hidden;
+  padding-top: 5rem;  /* Optional spacing for content */
+  padding-bottom: 5rem;
+}
+
+
+
+/* Bottom Right Image */
+.menu-card-five-two::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url('../img/menuFive/biriyani-img-two.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 600px;
+  transform: rotate(-20deg);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+/* Title Image - Bigger */
+.biriyani-title {
+  max-height: 150px;
+  padding-bottom: 0;
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+/* Left Dish Image */
+.biriyani-one {
+  position: absolute;
+  left: -280px;
+  top: 50%;
+  transform: translateY(-90%) rotate(10deg);
+  height: 280px;
+  z-index: 1;
+}
+
+/* Right Dish Image */
+.biriyani-two {
+  position: absolute;
+  right: -280px;
+  top: 50%;
+  transform: translateY(-40%) rotate(-10deg);
+  height: 280px;
+  z-index: 1;
+}
+
+.biriyani-title-description {
+  border-top: 1px solid #cc960d;
+  max-width: 500px;
+  margin: 1rem auto 0 auto;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #797777;
+  text-align: center;
+  margin-top: -40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .biriyani-title {
+    max-height: 100px;
+  }
+
+  .biriyani-one,
+  .biriyani-two {
+    height: 120px;
+    left: -70px;
+    right: -70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .biriyani-title {
+    max-height: 80px;
+  }
+
+  .biriyani-one,
+  .biriyani-two {
+    height: 100px;
+    left: -50px;
+    right: -50px;
+  }
+}
+
+.menu-card-six-two {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto; /* Content-driven height */
+  min-height: 100vh; /* Ensure both images are visible */
+  position: relative;
+  overflow: hidden;
+  padding-top: 5rem;  /* Optional spacing for content */
+  padding-bottom: 5rem;
+}
+
+
+/*  =========== menu card five end =============== */
+/*  =========== menu card six start =============== */
+
+.menu-card-six {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto; 
+  min-height: 100vh; 
+  position: relative;
+  overflow: hidden;
+  padding-top: 5rem;  
+  padding-bottom: 5rem;
+}
+
+.card-body {
+  background-color: #fff6f6;
+  height: auto;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
+/* Optional: remove default borders between list items for a cleaner look */
+.list-group-item {
+  border: none;
+  padding: 0.75rem 1rem;
+}
+
+.list-group-item + .list-group-item {
+  border-top: 1px solid #f1f1f1;   /* subtle divider */
+}
+
+/* Small helper so the round “+” button always looks neat */
+.btn.rounded-circle i {
+  font-size: 0.9rem;   /* keep icon centered */
+}
+
+
+.dish-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* Raise left and right images slightly */
+.dish-img-left {
+  position: relative;
+  top: -8px;
+}
+
+.dish-img-right {
+  position: relative;
+  top: -8px;
+}
+
+
+/* Title Image - Bigger */
+.arabic-title {
+  max-height: 200px;
+  padding-bottom: 0;
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+
+
+/* Right Dish Image */
+.arabic-dish-img {
+  position: absolute;
+  right: -280px;
+  top: 50%;
+  transform: translateY(-30%) translateX(10%) rotate(0deg);
+  height: 380px;
+  z-index: 1;
+}
+
+.biriyani-title-description {
+  border-top: 1px solid #cc960d;
+  max-width: 500px;
+  margin: 1rem auto 0 auto;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #797777;
+  text-align: center;
+  margin-top: -40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .biriyani-title {
+    max-height: 100px;
+  }
+
+  .biriyani-one,
+  .biriyani-two {
+    height: 120px;
+    left: -70px;
+    right: -70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .biriyani-title {
+    max-height: 80px;
+  }
+
+  .biriyani-one,
+  .biriyani-two {
+    height: 100px;
+    left: -50px;
+    right: -50px;
+  }
+}
+
+.arabic-title-description {
+  border-top: 1px solid #cc960d;
+  max-width: 1000px;
+
+
+  margin-top: 20px;
+
+}
+/*  =========== menu card six end =============== */
 
 
 /*===== FOOTER ONE =====*/

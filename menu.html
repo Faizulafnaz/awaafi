@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<html lang="en"></html>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,65 +30,624 @@
 
 <body>
 
-  <!-- Navbar and Hero section -->
-  <div class="container-fluid hero-section">
-    <!-- ----------  Header / navbar  ---------- -->
-    <header>
-      <nav class="navbar navbar-expand-lg bg-transparent">
-        <div class="container-fluid">
-          <!--  Logo + toggler  -->
-          <a class="navbar-brand p-3" href="#">
-            <img src="assets/img/logo.png" alt="Logo" class="logo img-fluid" height="40">
-          </a>
+<!-- Navbar and Hero section -->
+<div class="container-fluid hero-section">
+  <!-- ---------- Navbar ---------- -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand p-3" href="#">
+          <img src="assets/img/logo.png" alt="Logo" class="logo img-fluid" height="40">
+        </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                  aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <!--  Collapsible links  -->
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <!--  Mobile search (visible below lg)  -->
-            <form class="d-block d-lg-none mt-3 w-100 position-relative" role="search" style="margin-bottom:23px;">
-              <input class="form-control search-input" type="search" placeholder="Search your favourite food">
-              <span class="search-icon"><span class="separator"></span><i class="bi bi-search"></i></span>
-            </form>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <form class="d-block d-lg-none mt-3 w-100 position-relative" role="search">
+            <input class="form-control search-input" type="search" placeholder="Search your favourite food">
+            <span class="search-icon"><i class="bi bi-search"></i></span>
+          </form>
 
-            <!--  Desktop / mobile nav items  -->
-            <ul class="navbar-nav ms-auto nav-link-wrapper">
-              <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://edinburgh.awaafi.co.uk/Menu">Login menu</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">DEALS</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">GET IN TOUCH</a></li>
-              <li class="nav-item">
-                <a class="nav-link"
-                   href="https://www.google.com/maps/reserve/v/dine/c/pNL_zZxUSP4?...">BOOKING</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">REVIEW</a></li>
-            </ul>
+          <ul class="navbar-nav ms-auto nav-link-wrapper">
+            <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Login menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">DEALS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">GET IN TOUCH</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">BOOKING</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">REVIEW</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ---------- Hero Content ---------- -->
+  <div class="hero-content text-white">
+    <h1 class="display-5 fw-bold">
+      A JOURNEY <br />
+      THROUGH <span class="text-warning">INDIAN</span><br />
+      <span class="text-warning">ARABIC CUISINE</span>
+    </h1>
+    <p class="lead my-3 hero-description">
+      Welcome to Awaafi Restaurant – Your Gateway to Exquisite Indian and <br />
+      Arabic Flavours. Located at 110a Gorgie Road, EH11 2NP, Awaafi Restaurant is <br />
+      a culinary treasure trove that transports you to the vibrant culinary <br />
+      landscapes of India and the Middle East.
+    </p>
+
+    <!-- Desktop Search -->
+    <div class="container-fluid d-none d-lg-block">
+      <div class="row justify-content-end">
+        <div class="col-md-6 col-sm-12 col-lg-5">
+          <form class="search-form" role="search">
+            <div class="position-relative">
+              <input type="search" class="form-control search-input" placeholder="Search your favourite food">
+              <span class="search-icon"><i class="bi bi-search"></i></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =============== Menu Section Start =============== -->
+ <!-- scrolling if needed -->
+<div class="menu-section container-fluid py-4 px-3 text-center">
+  <p class="menu-title text-warning fw-bold display-6 mb-4 text-white">OUR MENU</p>
+  
+
+
+<div class="container py-4">
+  <div class="scrolling-wrapper">
+    <div class="scroll-item ">
+      <a href="#menu1" class="text-white text-decoration-none">Appetisers & Sides</a>
+    </div>
+    <div class="scroll-item">
+      <a href="#menu2" class="text-white text-decoration-none">Starters & Pakoras</a>
+    </div>
+    <div class="scroll-item">
+      <a href="#menu3" class="text-white text-decoration-none">Vegetable Dishes</a>
+    </div>
+    <div class="scroll-item">
+      <a href="#menu4" class="text-white text-decoration-none">Indian Traditional Dishes</a>
+    </div>
+    <div class="scroll-item">
+      <a href="#menu5" class="text-white text-decoration-none">South indian dishes</a>
+    </div>
+    <div class="scroll-item">
+      <a href="#menu6" class="text-white text-decoration-none">Awaafi Combos</a>
+    </div>
+    <div class="scroll-item">
+      <a href="#menu7" class="text-white text-decoration-none">Rice & Breads</a>
+    </div>
+    <div class="scroll-item">
+      <a href="#menu8" class="text-white text-decoration-none">Awaafi Grills</a>
+    </div>
+    <!-- Add more if needed -->
+  </div>
+</div>
+
+  
+</div>
+
+<!-- =============== Menu Section End =============== -->
+
+
+
+<!-- =============== menu card one Appetisers & Sides Section start =============== -->
+
+  <div id="menu1" class=" menu-card-one appetisers-sides-section container-fluid py-5">
+    <div class="container">
+      <div class=" row">
+        <div class="col-lg-12 text-start mb-4 section-one-title-wrapper">
+          <h2 class="section-one-title ">Appetisers & Sides</h2>
+        </div>
+      </div>
+
+
+      <div class="row"> 
+        <!-- custom card -->
+        <div class="col-lg-4 col-md-6 mb-4 cardone">
+          <div class="custom-card d-flex align-items-center p-3 rounded shadow">
+            <div class="card-text-section flex-grow-1 pe-3">
+              <h5 class="fw-bold mb-2 text-black">Chips</h5>
+              <p class="mb-2 text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy</p>
+              <div class="fw-bold fs-5 text-black">£2.49</div>
+            </div>
+            <div class="card-image-section position-relative">
+              <img src="assets/img/cardOne-appetisers/cardOne1.jpg" class="rounded image-fixed-size" alt="Chips">
+  
+              <div class="icon-container position-absolute d-flex align-items-center justify-content-center">
+                <div class="add-icon d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-plus fs-5 text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!-- custom card ends -->
+      </div>
+
+    </div>
+  </div>
+<!-- =============== menu card one Appetisers & Sides Section End =============== -->
+
+<!-- =============== menu card two Starters & Pakoras Section start =============== -->
+<!-- subpart one -->
+  <div id="menu2" class=" menu-card-two-sub-one appetisers-sides-section container-fluid py-5">
+    <div class="container">
+      <div class=" row">
+        <div class="col-lg-12 text-start mb-4 section-one-title-wrapper">
+          <h2 class="section-one-title ">Starters & Pakoras</h2>
+        </div>
+      </div>
+
+      <div class="row"> 
+        <!-- custom card -->
+        <div class="col-lg-4 col-md-6 mb-4 cardone">
+          <div class="custom-card d-flex align-items-center p-3 rounded shadow">
+            <div class="card-text-section flex-grow-1 pe-3">
+              <h5 class="fw-bold mb-2 text-black">Chips</h5>
+              <p class="mb-2 text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy</p>
+              <div class="fw-bold fs-5 text-black">£2.49</div>
+            </div>
+            <div class="card-image-section position-relative">
+              <img src="assets/img/cardOne-appetisers/cardOne1.jpg" class="rounded image-fixed-size" alt="Chips">
+  
+              <div class="icon-container position-absolute d-flex align-items-center justify-content-center">
+                <div class="add-icon d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-plus fs-5 text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!-- custom card ends -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- sub part two -->
+    <div class=" menu-card-two-sub-two appetisers-sides-section container-fluid py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12  text-center mb-4 section-one-title-two-wrapper position-relative">
+            <div class="section-one-title-image d-inline-block position-relative">
+              <img src="assets/img/menuTwo/title-two.png" alt="Starters & Pakoras" class="title-img" />
+              <img src="assets/img/menuTwo/title-img.png" alt="Dish" class="dish-icon" />
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- ----------  End navbar  ---------- -->
+        
+              <div class="row"> 
+                <!-- custom card -->
+                <div class="col-lg-4 col-md-6 mb-4 cardone">
+                  <div class="custom-card d-flex align-items-center p-3 rounded shadow">
+                    <div class="card-text-section flex-grow-1 pe-3">
+                      <h5 class="fw-bold mb-2 text-black">Chips</h5>
+                      <p class="mb-2 text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy</p>
+                      <div class="fw-bold fs-5 text-black">£2.49</div>
+                    </div>
+                    <div class="card-image-section position-relative">
+                      <img src="assets/img/cardOne-appetisers/cardOne1.jpg" class="rounded image-fixed-size" alt="Chips">
+          
+                      <div class="icon-container position-absolute d-flex align-items-center justify-content-center">
+                        <div class="add-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="bi bi-plus fs-5 text-white"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <!-- custom card ends -->
+              </div>
+      </div>
+    </div>
+<!-- =============== menu card two Starters & Pakoras Section End =============== -->
 
-    <!-- ----------  Login card  ---------- -->
-
-    <!-- ----------  End login card  ---------- -->
 
 
+<!-- =============== menu card three Vegetable Dishes  =============== -->
 
+  <div id="menu3" class=" menu-card-three appetisers-sides-section container-fluid py-5">
+    <div class="container">
+      <div class=" row">
+        <div class="col-lg-12 text-start mb-4 section-one-title-wrapper">
+          <h2 class="section-one-title ">Vegetable Dishes </h2>
+        </div>
+      </div>
 
+      <div class="row"> 
+        <!-- custom card -->
+        <div class="col-lg-4 col-md-6 mb-4 cardone">
+          <div class="custom-card d-flex align-items-center p-3 rounded shadow">
+            <div class="card-text-section flex-grow-1 pe-3">
+              <h5 class="fw-bold mb-2 text-black">Chips</h5>
+              <p class="mb-2 text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy</p>
+              <div class="fw-bold fs-5 text-black">£2.49</div>
+            </div>
+            <div class="card-image-section position-relative">
+              <img src="assets/img/cardOne-appetisers/cardOne1.jpg" class="rounded image-fixed-size" alt="Chips">
+  
+              <div class="icon-container position-absolute d-flex align-items-center justify-content-center">
+                <div class="add-icon d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-plus fs-5 text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!-- custom card ends -->
+      </div>
 
-
+    </div>
   </div>
-  <!-- End hero Section -->
+<!-- =============== menu card three Vegetable Dishes End =============== -->
+
+
+<!-- =============== menu card four Indian Traditional Dishes  Section  =============== -->
+  <div id="menu4" class=" menu-card-four appetisers-sides-section container-fluid py-5">
+    <div class="container">
+      <div class=" row">
+        <div class="col-lg-12 text-start mb-4 section-one-title-wrapper">
+          <h2 class="section-one-title ">Indian Traditional Dishes </h2>
+        </div>
+      </div>
+
+
+      <div class="row "> 
+
+        <!-- custom card -->
+         <div class="col-lg-4 col-md-6 mb-4">
+           <div class="container mt-5">
+             <div class="card mx-auto shadow-lg rounded" style="max-width: 22rem;">
+               <!-- Profile Image -->
+               <div class="mx-auto rounded-circle  position-relative" 
+                   style="width: 130px; height: 130px; margin-top: -65px; overflow: hidden;">
+                 <img 
+                   src="./assets/img/menuFour/menuFourItem1.png"
+                   class="w-100 h-100 object-fit-cover"
+                   alt="Woman looking front"
+                   style="object-position: center;">
+               </div>
+               <!-- title and description -->
+               <div class="card-body text-center">
+                 <h5 class="card-title ">Bhuna</h5>
+                 <p class="card-description small mb-3">Medium - Cooked In Tomatoes, Onions, Ginger, Garlic, Indian Spices With A Thick Sauce</p>
+                 <!-- added curry list -->
+                 <ul class="list-group list-group-flush">
+
+                  <!-- sub curry item -->
+                   <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="card-list-title">chicken</span>
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="card-list-title">£10.99</span>
+                      <button class="btn btn-sm btn-dark fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 26px; height: 26px;">
+                        <i class="bi bi-plus text-white card-list-icon"></i>
+                      </button>
+                    </div>
+                  </li>
+                   <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="card-list-title">Kuruma</span>
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="card-list-title">£10.99</span>
+                      <button class="btn btn-sm btn-dark fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 26px; height: 26px;">
+                        <i class="bi bi-plus text-white card-list-icon"></i>
+                      </button>
+                    </div>
+                  </li>
+                   <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span class="card-list-title">Beef chilly</span>
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="card-list-title">£10.99</span>
+                      <button class="btn btn-sm btn-dark fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 26px; height: 26px;">
+                        <i class="bi bi-plus text-white card-list-icon"></i>
+                      </button>
+                    </div>
+                  </li>
+
+                  <!-- sub curry item end -->
+
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+        <!-- custom card ends -->
+
+
+
+      </div>
+
+    </div>
+  </div>
+<!-- =============== menu card four Indian Traditional Dishes  Section End =============== -->
+
+
+
+
+<!-- =============== menu card five South indian dishes start =============== -->
+<!-- subpart one -->
+  <div id="menu5" class=" menu-card-two-sub-one appetisers-sides-section container-fluid py-5">
+    <div class="container">
+      <div class=" row">
+        <div class="col-lg-12 text-start mb-4 section-one-title-wrapper">
+          <h2 class="section-one-title ">South indian dishes</h2>
+        </div>
+      </div>
+
+      <div class="row"> 
+        <!-- custom card -->
+        <div class="col-lg-4 col-md-6 mb-4 cardone">
+          <div class="custom-card d-flex align-items-center p-3 rounded shadow">
+            <div class="card-text-section flex-grow-1 pe-3">
+              <h5 class="fw-bold mb-2 text-black">Chips</h5>
+              <p class="mb-2 text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy</p>
+              <div class="fw-bold fs-5 text-black">£2.49</div>
+            </div>
+            <div class="card-image-section position-relative">
+              <img src="assets/img/cardOne-appetisers/cardOne1.jpg" class="rounded image-fixed-size" alt="Chips">
+  
+              <div class="icon-container position-absolute d-flex align-items-center justify-content-center">
+                <div class="add-icon d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-plus fs-5 text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!-- custom card ends -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- sub part two -->
+    <div class=" menu-card-five-two appetisers-sides-section container-fluid py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12  text-center mb-4  position-relative">
+            <div class="section-one-title-image d-inline-block position-relative">
+              <img src="assets/img/menuFive/biriyani-img.png" alt="Dish" class="biriyani-one" />
+              <img src="assets/img/menuFive/biriyani-title.png" alt="Starters & Pakoras" class="biriyani-title" />
+              <img src="assets/img/menuFive/biriyani-img.png" alt="Dish" class="biriyani-two" />
+              <div class="biriyani-title-description">
+                <p>A Pot Of Biryani To Feed Your Soul Which Is An Indigenous Recipe From Kerala, Aromatic Rice Flavoured With Exotic Spices Like Saffron, Cardamom, Clove, Cinnamon, Layered With Meat Cooked In Athick Malabari Biryani Masala. </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+              <div class="row"> 
+                <!-- custom card -->
+                <div class="col-lg-4 col-md-6 mb-4 cardone">
+                  <div class="custom-card d-flex align-items-center p-3 rounded shadow">
+                    <div class="card-text-section flex-grow-1 pe-3">
+                      <h5 class="fw-bold mb-2 text-black">Chips</h5>
+                      <p class="mb-2 text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy</p>
+                      <div class="fw-bold fs-5 text-black">£2.49</div>
+                    </div>
+                    <div class="card-image-section position-relative">
+                      <img src="assets/img/cardOne-appetisers/cardOne1.jpg" class="rounded image-fixed-size" alt="Chips">
+          
+                      <div class="icon-container position-absolute d-flex align-items-center justify-content-center">
+                        <div class="add-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="bi bi-plus fs-5 text-white"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <!-- custom card ends -->
+              </div>
+      </div>
+    </div>
+<!-- =============== menu card five South indian dishes End =============== -->
+
+
+<!-- =============== menu card six Awaafi Combos start =============== -->
+  <div id="menu6" class="menu-card-six appetisers-sides-section container-fluid py-5">
+    <div class="container">
+      <div class=" row">
+        <div class="col-lg-12 text-start mb-4 section-one-title-wrapper">
+          <h2 class="section-one-title ">Awaafi Combos</h2>
+        </div>
+      </div>
+      <div class="row "> 
+        <!-- custom card -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="container mt-5">
+            <div>
+              <div class="card mx-auto shadow-lg bg-warning " style="max-width: 22rem; border-radius: 15px;">
+                <!-- Main circular image -->
+                <div class="mx-auto rounded-circle position-relative"
+                    style="width:130px;height:130px;margin-top:-65px;overflow:hidden;">
+                  <img src="./assets/img/menuFour/menuFourItem1.png"
+                      class="w-100 h-100 object-fit-cover"
+                      alt="Dish" style="object-position:center;">
+                </div>
+                <!-- Row of 3 small rounded dish images -->
+                <div class="dish-image-row d-flex justify-content-center align-items-center gap-2 my-3">
+                  <img src="./assets/img/menuSix/sideDishOne.png" alt="Dish 1"
+                      class="rounded-circle dish-img dish-img-left">
+                  <img src="./assets/img/menuSix/sideDishTwo.png" alt="Dish 2"
+                      class="rounded-circle dish-img">
+                  <img src="./assets/img/menuSix/sideDishOne.png" alt="Dish 3"
+                      class="rounded-circle dish-img dish-img-right">
+                </div>
+                <!-- White body with items and prices -->
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <!-- Item 1 -->
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="fw-semibold">Chicken</span>
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="fw-semibold">£10.99</span>
+                        <button class="btn btn-sm btn-dark rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:26px;height:26px;">
+                          <i class="bi bi-plus text-white"></i>
+                        </button>
+                      </div>
+                    </li>
+                    <!-- Item 2 -->
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="fw-semibold">Kuruma</span>
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="fw-semibold">£10.99</span>
+                        <button class="btn btn-sm btn-dark rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:26px;height:26px;">
+                          <i class="bi bi-plus text-white"></i>
+                        </button>
+                      </div>
+                    </li>
+                    <!-- Item 3 -->
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span class="fw-semibold">Beef Chilly</span>
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="fw-semibold">£10.99</span>
+                        <button class="btn btn-sm btn-dark rounded-circle d-flex align-items-center justify-content-center"
+                                style="width:26px;height:26px;">
+                          <i class="bi bi-plus text-white"></i>
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div><!-- /.card-body -->
+              </div><!-- /.card -->
+            </div>
+          </div>
+        </div>
+        <!-- custom card ends -->
 
 
 
 
 
+      </div>
+
+    </div>
+  </div>
+
+
+
+    <!-- sub part two -->
+    <div class=" menu-card-six-two appetisers-sides-section container-fluid py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12  text-center mb-4  position-relative">
+            <div class="section-one-title-image d-inline-block position-relative">
+              <img src="assets/img/menuSix/arabic-special-title.png" alt="Starters & Pakoras" class="arabic-title" />
+              <img src="assets/img/menuSix/arabic-dish.png" alt="Dish" class="arabic-dish-img" />
+              <div class="arabic-title-description">
+                <p></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+              <div class="row"> 
+                <!-- custom card -->
+                <div class="col-lg-4 col-md-6 mb-4 cardone">
+                  <div class="custom-card d-flex align-items-center p-3 rounded shadow">
+                    <div class="card-text-section flex-grow-1 pe-3">
+                      <h5 class="fw-bold mb-2 text-black">Chips</h5>
+                      <p class="mb-2 text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy</p>
+                      <div class="fw-bold fs-5 text-black">£2.49</div>
+                    </div>
+                    <div class="card-image-section position-relative">
+                      <img src="assets/img/cardOne-appetisers/cardOne1.jpg" class="rounded image-fixed-size" alt="Chips">
+          
+                      <div class="icon-container position-absolute d-flex align-items-center justify-content-center">
+                        <div class="add-icon d-flex justify-content-center align-items-center rounded-circle">
+                          <i class="bi bi-plus fs-5 text-white"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <!-- custom card ends -->
+              </div>
+      </div>
+    </div>
+<!-- =============== menu card six Awaafi Combos end =============== -->
+
+<!-- =============== menu card seven Rice & Breads start =============== -->
+   <div id="menu7" class=" menu-card-two-sub-one appetisers-sides-section container-fluid py-5">
+    <div class="container">
+      <div class=" row">
+        <div class="col-lg-12 text-start mb-4 section-one-title-wrapper">
+          <h2 class="section-one-title ">Rice & Breads</h2>
+        </div>
+      </div>
+
+      <div class="row"> 
+        <!-- custom card -->
+        <div class="col-lg-4 col-md-6 mb-4 cardone">
+          <div class="custom-card d-flex align-items-center p-3 rounded shadow">
+            <div class="card-text-section flex-grow-1 pe-3">
+              <h5 class="fw-bold mb-2 text-black">Chips</h5>
+              <p class="mb-2 text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy</p>
+              <div class="fw-bold fs-5 text-black">£2.49</div>
+            </div>
+            <div class="card-image-section position-relative">
+              <img src="assets/img/cardOne-appetisers/cardOne1.jpg" class="rounded image-fixed-size" alt="Chips">
+  
+              <div class="icon-container position-absolute d-flex align-items-center justify-content-center">
+                <div class="add-icon d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-plus fs-5 text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!-- custom card ends -->
+      </div>
+
+    </div>
+  </div>
+<!-- =============== menu card seven Rice & Breads end =============== -->
+
+<!-- =============== menu card eight Awaafi Grills start =============== -->
+   <div id="menu8" class=" menu-card-two-sub-one appetisers-sides-section container-fluid py-5">
+    <div class="container">
+      <div class=" row">
+        <div class="col-lg-12 text-start mb-4 section-one-title-wrapper">
+          <h2 class="section-one-title ">Awaafi Grills</h2>
+        </div>
+      </div>
+
+      <div class="row"> 
+        <!-- custom card -->
+        <div class="col-lg-4 col-md-6 mb-4 cardone">
+          <div class="custom-card d-flex align-items-center p-3 rounded shadow">
+            <div class="card-text-section flex-grow-1 pe-3">
+              <h5 class="fw-bold mb-2 text-black">Chips</h5>
+              <p class="mb-2 text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy</p>
+              <div class="fw-bold fs-5 text-black">£2.49</div>
+            </div>
+            <div class="card-image-section position-relative">
+              <img src="assets/img/cardOne-appetisers/cardOne1.jpg" class="rounded image-fixed-size" alt="Chips">
+  
+              <div class="icon-container position-absolute d-flex align-items-center justify-content-center">
+                <div class="add-icon d-flex justify-content-center align-items-center rounded-circle">
+                  <i class="bi bi-plus fs-5 text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!-- custom card ends -->
+      </div>
+
+    </div>
+  </div>
+<!-- =============== menu card eight Awaafi Grills end =============== -->
  
 
   <!--====== FOOTER ONE PART START ======-->
