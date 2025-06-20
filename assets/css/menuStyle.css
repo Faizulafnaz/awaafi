@@ -780,7 +780,7 @@ p{
 /* Bottom Right Image */
 .menu-card-four::after {
   content: '';
-  position: absolute;
+  position: absolute;                                      
   bottom: 0;
   right: 0;
   background-image: url('../img/menuFour/menuFourImgTwo.png');
@@ -1027,27 +1027,27 @@ p{
 /* Title Image - Bigger */
 .arabic-title {
   max-height: 200px;
-  padding-bottom: 0;
   height: auto;
-  width: auto;
+  width: 100%;
+  max-width: 300px;
   display: block;
   margin: 0 auto;
   z-index: 2;
   position: relative;
 }
 
-
-
 /* Right Dish Image */
 .arabic-dish-img {
   position: absolute;
   right: -280px;
   top: 50%;
-  transform: translateY(-30%) translateX(10%) rotate(0deg);
-  height: 380px;
+  transform: translateY(-45%) translateX(-10%) rotate(0deg);
+  height: 300px;
+  width: auto;
   z-index: 1;
 }
 
+/* Description Styling */
 .biriyani-title-description {
   border-top: 1px solid #cc960d;
   max-width: 500px;
@@ -1060,43 +1060,293 @@ p{
   font-family: 'Segoe UI', sans-serif;
 }
 
-
 /* Responsive Adjustments */
+@media (max-width: 992px) {
+  .arabic-dish-img {
+    right: -180px;
+    height: 300px;
+  }
+
+  .arabic-title {
+    max-width: 260px;
+  }
+}
+
 @media (max-width: 768px) {
-  .biriyani-title {
-    max-height: 100px;
+  .arabic-dish-img {
+    right: -120px;
+    height: 240px;
   }
 
-  .biriyani-one,
-  .biriyani-two {
-    height: 120px;
-    left: -70px;
-    right: -70px;
+  .arabic-title {
+    max-width: 220px;
   }
 }
 
-@media (max-width: 480px) {
-  .biriyani-title {
-    max-height: 80px;
+@media (max-width: 576px) {
+  .arabic-dish-img {
+    position: static; /* Stacks below title */
+    transform: none;
+    margin: 20px auto 0;
+    display: block;
+    height: 200px;
   }
 
-  .biriyani-one,
-  .biriyani-two {
-    height: 100px;
-    left: -50px;
-    right: -50px;
+  .arabic-title {
+    max-width: 180px;
+  }
+
+  .biriyani-title-description {
+    font-size: 0.85rem;
+    margin-top: 10px;
+  }
+
+  .section-one-title-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
-.arabic-title-description {
-  border-top: 1px solid #cc960d;
-  max-width: 1000px;
-
-
-  margin-top: 20px;
-
-}
 /*  =========== menu card six end =============== */
+
+
+/* ================= menu card nine =============== */
+
+
+.menu-card-nine {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Top Left Image */
+.menu-card-nine .top-left-img {
+  position: absolute;
+  top: 200px;
+  left: -290px;
+  width: 600px; /* increased size */
+  max-width: 50vw;
+  height: auto;
+  opacity: 1;
+  z-index: 0;
+  transform: rotate(-40deg);
+}
+
+/* Top Right Image */
+.menu-card-nine .top-right-img {
+  position: absolute;
+  top: 200px;
+  right: -150px;
+  width: 400px; /* increased size */
+  max-width: 50vw;
+  height: auto;
+  opacity: 1;
+  z-index: 0;
+  transform: rotate(80deg);
+}
+
+
+
+
+
+.menu-nine-title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Reduced space between image and title */
+}
+
+.milkshake-img {
+  width: 600px;
+  max-width: 100%; /* Scales nicely on larger screens */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.milkshake-title {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  border-bottom: 1px solid #cc960d;
+}
+
+
+
+/*  =========== menu card nine end =============== */
+
+/*  =========== menu card ten start =============== */
+
+.menu-card-ten {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+  min-height: 150vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.menu-card-ten-title-image {
+  display: flex;
+  flex-direction: row; /* Row layout: image left, text right */
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem; /* Space between milkshake and title */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hot-cofee-img {
+  height: auto;
+  width: 300px;
+  max-width: 100%;
+  display: block;
+  z-index: 1;
+  rotate: 50deg; /* Slight rotation for effect */
+}
+
+.hot-cofee-title {
+  height: auto;
+  width: 750px;
+  max-width: 100%;
+  display: block;
+  z-index: 2;
+  margin-top: 0;
+  border-bottom: 1px solid #cc960d;
+  padding-bottom: -7rem; /* Adjusted padding for better spacing */
+}
+
+/* Optional: Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .menu-card-ten-title-image {
+    flex-direction: column; /* Stack on small screens */
+  }
+
+
+  .hot-cofee-title {
+    width: 80%;
+  }
+
+  .hot-cofee-img {
+    width: 50%;
+  }
+
+  .hot-cofee-title {
+    margin-top: -7rem;
+  }
+}
+
+
+
+
+/*  =========== menu card ten end =============== */
+
+
+/*  =========== menu card eleven start =============== */
+/* Title underline styling (if not already) */
+.menu-card-eleven {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+  min-height: 150vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.menu-card-eleven::after {
+  content: '';
+  position: absolute;                                      
+  bottom: -200px;
+  right: 0;
+  background-image: url('../img/menuEleven/cola-right-img.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 600px;
+  transform: rotate(120deg);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.menu-eleven-title-wrapper {
+  border-bottom: 3px solid #ffc107; /* Golden underline */
+  padding-bottom: 0.8rem;
+  display: inline-block; /* Shrinks to fit content */
+  position: relative;
+}
+
+.menu-eleven-title {
+  color: #f8af00;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+
+/* LEFT Image: Mirrored and below title */
+.menu-eleven-left-decor {
+  position: absolute;
+  top: -60px; /* Move below title */
+  left: -260px; /* Push far left */
+  width: 460px;
+  transform: rotate(-15deg) scaleX(-1); /* Rotate and mirror */
+  z-index: 2; /* Below text */
+  opacity: 0.5;
+}
+
+/* RIGHT Image: Placed under the title underline */
+.menu-eleven-right-decor {
+  position: absolute;
+  top: -200px; /* Adjust this to be below title */
+  right: -200px;
+  width: 640px;
+  transform: rotate(-40deg);
+  z-index: 1; /* Keep it behind text */
+  opacity: 0.8;
+}
+
+/* RESPONSIVE HANDLING */
+@media (max-width: 768px) {
+  .menu-eleven-left-decor,
+  .menu-eleven-right-decor {
+    width: 160px;
+    opacity: 0.5;
+  }
+
+  .menu-eleven-left-decor {
+    top: 100px;
+    left: -120px;
+  }
+
+  .menu-eleven-right-decor {
+    top: 200px;
+  }
+}
+
+
+
+/*  =========== menu card eleven end =============== */
 
 
 /*===== FOOTER ONE =====*/
