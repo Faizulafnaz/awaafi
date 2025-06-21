@@ -72,63 +72,63 @@
       </nav>
     </header>
     <!-- ----------  End navbar  ---------- -->
+<!-- ----------  Login card  ---------- -->
+<div class="container">
+  <div class="row min-vh-80">
 
-    <!-- ----------  Login card  ---------- -->
-    <div class="container mt-0 ">
-      <div class="container d-flex align-items-center justify-content-end min-vh-100 ">
-        <div class="col-md-6 col-lg-5">
-          <div class="p-4 p-md-5 bg-white shadow rounded-4 login-card">
-            <!--  Title  -->
-            <div class="text-center">
-              <h3 class="mb-1 fw-bold text-dark">Welcome back</h3>
-              <p class="mb-4 text-muted small">Log in your account</p>
-            </div>
-
-            <!--  Form  -->
-            <form>
-              <div class="mb-3">
-                <input id="email" type="email" class="form-control custom-input"
-                       placeholder="Enter your email or mobile">
-              </div>
-
-              <div class="mb-3">
-
-                <input id="password" type="password" class="form-control custom-input"
-                       placeholder="Enter password">
-              </div>
-
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <div class="form-check mb-0">
-                  <input id="rememberMe" class="form-check-input" type="checkbox">
-                  <label class="form-check-label text-black small" for="rememberMe">Remember me</label>
-                </div>
-                <a href="#" class="text-decoration-none small text-black">Forgot Password?</a>
-              </div>
-
- <button type="submit" class="btn btn-warning w-100 fw-semibold">
-  <span class="text-white small">
-    LOG IN
-  </span>
-</button>
-
-              <div class="text-center my-3 text-muted small">or continue with</div>
-
-              <button type="button"
-                      class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center gap-2">
-                <img src="/assets/img/google-img.png" alt="Google Icon" style="height:20px;width:20px;">
-                Continue with Google
-              </button>
-
-              <p class="mt-4 text-center text-muted small">
-                Don't have an account?
-                <a href="#" class="fw-bold text-decoration-none text-black small">Sign up here</a>
-              </p>
-            </form>
-          </div>
+    <!-- Left section: Text aligned at bottom left -->
+    <div class="col-md-6 d-none d-md-flex p-0">
+      <div class="d-flex flex-column justify-content-end w-100 ">
+        <div class="feed-text-wrapper">
+          <p class="feed-line">FEED</p>
+          <p class="feed-line">YOUR</p>
+          <p class="feed-line soul-text">SOUL</p>
         </div>
       </div>
     </div>
-    <!-- ----------  End login card  ---------- -->
+
+    <!-- Right section: Login card aligned top right -->
+    <div class="col-md-6 col-lg-5 d-flex align-items-start justify-content-end">
+      <div class="p-4 p-md-5 bg-white shadow rounded-5 login-card w-100">
+        <div class="text-center">
+          <h3 class="mb-1 fw-bold text-dark">Welcome back</h3>
+          <p class="mb-4 text-muted small">Log in your account</p>
+        </div>
+        <form>
+          <div class="mb-3">
+            <input id="email" type="email" class="form-control custom-input" placeholder="Enter your email or mobile">
+          </div>
+          <div class="mb-3">
+            <input id="password" type="password" class="form-control custom-input" placeholder="Enter password">
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="form-check mb-0">
+              <input id="rememberMe" class="form-check-input" type="checkbox">
+              <label class="form-check-label text-black small" for="rememberMe">Remember me</label>
+            </div>
+            <a href="#" class="text-decoration-none small text-black">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn btn-warning w-100 fw-semibold">
+            <span class="text-white small">LOG IN</span>
+          </button>
+          <div class="text-center my-3 text-muted small">or continue with</div>
+          <button type="button" class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center gap-2">
+            <img src="/assets/img/google-img.png" alt="Google Icon" style="height:20px;width:20px;">
+            Continue with Google
+          </button>
+          <p class="mt-4 text-center text-muted small">
+            Don't have an account?
+            <a href="#" class="fw-bold text-decoration-none text-black small">Sign up here</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ----------  End login card  ---------- -->
 
 
 

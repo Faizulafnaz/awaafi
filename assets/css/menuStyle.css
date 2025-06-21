@@ -1262,7 +1262,7 @@ p{
 
 /*  =========== menu card eleven start =============== */
 /* Title underline styling (if not already) */
-.menu-card-eleven {
+.menu-card-twelve {
   background-color: rgb(0, 0, 0);
   width: 100%;
   height: auto;
@@ -1272,30 +1272,21 @@ p{
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-
-.menu-card-eleven::after {
-  content: '';
-  position: absolute;                                      
-  bottom: -200px;
-  right: 0;
-  background-image: url('../img/menuEleven/cola-right-img.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 600px;
-  height: 600px;
-  transform: rotate(120deg);
-  opacity: 0.5;
-  z-index: 0;
+.menu-card-twelve .container {
+  position: relative;
+  z-index: 5; /* Higher than decor */
 }
 
-.menu-eleven-title-wrapper {
+
+
+.menu-twelve-title-wrapper {
   border-bottom: 3px solid #ffc107; /* Golden underline */
   padding-bottom: 0.8rem;
   display: inline-block; /* Shrinks to fit content */
   position: relative;
 }
 
-.menu-eleven-title {
+.menu-twelve-title {
   color: #f8af00;
   font-size: 50px;
   font-weight: 600;
@@ -1305,7 +1296,7 @@ p{
 
 
 /* LEFT Image: Mirrored and below title */
-.menu-eleven-left-decor {
+.menu-twelve-left-decor {
   position: absolute;
   top: -60px; /* Move below title */
   left: -260px; /* Push far left */
@@ -1316,32 +1307,97 @@ p{
 }
 
 /* RIGHT Image: Placed under the title underline */
-.menu-eleven-right-decor {
+.menu-twelve-right-decor {
   position: absolute;
   top: -200px; /* Adjust this to be below title */
   right: -200px;
   width: 640px;
   transform: rotate(-40deg);
-  z-index: 1; /* Keep it behind text */
-  opacity: 0.8;
+  z-index: 0; /* Keep it behind text */
+  opacity: 0.4;
 }
 
 /* RESPONSIVE HANDLING */
 @media (max-width: 768px) {
-  .menu-eleven-left-decor,
-  .menu-eleven-right-decor {
+  .menu-twelve-left-decor,
+  .menu-twelve-right-decor {
     width: 160px;
     opacity: 0.5;
   }
 
-  .menu-eleven-left-decor {
+  .menu-twelve-left-decor {
     top: 100px;
     left: -120px;
   }
 
-  .menu-eleven-right-decor {
+  .menu-twelve-right-decor {
     top: 200px;
   }
+}
+
+
+.drink-card {
+  background-color: #fff;
+  transition: 0.3s;
+  color: black;
+  z-index: 2;
+  position: relative;
+}
+
+.drink-image {
+  max-height: 120px;
+  object-fit: contain;
+}
+.drink-option{
+  border-bottom: 1px solid #919191;
+}
+.drink-title-text{
+  font-weight: 600;
+}
+.drink-price-text{
+  font-weight: 600;
+}
+
+.drink-option button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+
+.plus-icon {
+  font-size: 32px; /* Adjust size as needed */
+  line-height: 1;   /* Prevent vertical overflow */
+}
+
+
+.menu-card-twelve-two {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.menu-card-twelve-two .container {
+  position: relative;
+  z-index: 5; /* Higher than decor */
+}
+
+.menu-card-twelve-two::after {
+  content: '';
+  position: absolute;                                      
+  bottom: -200px;
+  right: 0;
+  background-image: url('../img/menuEleven/cola-right-img.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 600px;
+  transform: rotate(120deg);
+  opacity: 1;
+  z-index: 2;
 }
 
 

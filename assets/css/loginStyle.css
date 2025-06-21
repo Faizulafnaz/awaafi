@@ -392,6 +392,24 @@ p{
 }
 
 
+/* ============ login card start  ============ */
+/* Wrapper for the text */
+.feed-text-wrapper {
+  padding: 2rem;
+}
+
+.feed-line {
+  font-size: 60px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.soul-text {
+  color: #FFC006;
+}
 
 .login-card {
   max-height: 90vh;
@@ -408,31 +426,13 @@ p{
 }
 
 .custom-input:focus {
-  border-bottom: 2px solid #000; /* You can change the focus color */
+  border-bottom: 2px solid #000;
   outline: none;
   box-shadow: none;
 }
 
 
-
-
-.divider-with-text {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #032e53; /* Bootstrap muted color */
-  font-size: 0.85rem; /* small */
-}
-
-.divider-with-text::before,
-.divider-with-text::after {
-  content: "";
-  flex: 1;
-  border-top: 4px solid #ccc;
-  margin: 0 10px;
-}
-
-
+/* ============ login card end  ============ */
 
 
 /*===== FOOTER ONE =====*/

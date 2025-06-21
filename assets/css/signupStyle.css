@@ -396,7 +396,42 @@ p{
 
 /* Login section */
 
+.feed-text-wrapper {
+  padding: 2rem;
+}
 
+.feed-line {
+  font-size: 60px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.soul-text {
+  color: #FFC006;
+}
+
+.login-card {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.custom-input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.custom-input:focus {
+  border-bottom: 2px solid #000;
+  outline: none;
+  box-shadow: none;
+}
 
 .custom-input {
   border: none;

@@ -398,6 +398,46 @@ p{
 
 /*===== Contact Us section =====*/
 
+/* Utility class to make content as wide as its largest child (like the heading) */
+.w-fit {
+  display: inline-block;
+}
+
+/* Image styling (no need for flex here) */
+.connect-us-img {
+  max-width: 60%;
+  height: auto;
+  margin-top: 1rem;
+}
+.contact-description-text{
+  font-size: 12px;
+  line-height: 1.6;
+  color: #CAC9C6; /* Adjusted for better readability */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Social icon style */
+.social-icon {
+  background-color: #F6BA06;       /* Background color */
+  color: rgb(255, 255, 255);                  /* Icon color */
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;           /* Makes it circular */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+/* Optional: hover effect */
+.social-icon:hover {
+  background-color: #ffffff;     /* Highlight on hover */
+  color: #F6BA06;
+}
+
 .limited-width-text {
   max-width: 450px; /* adjust as needed */
   margin-left: auto;
