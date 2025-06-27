@@ -67,6 +67,9 @@
     <!--================== SIGNUP CARD ==================-->
     <!-- MAIN BASKET SECTION -->
     <div class="container my-5" style="padding-bottom: 100px;">
+        <div class="text-center mb-4">
+           <h5 class="text-white">My Basket</h5>
+        </div>
       <div class="row g-4">
 
         <!-- Left Side -->
@@ -334,67 +337,7 @@
 
   <!-- Lightbox JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-  <script>
-  function showAddressForm() {
-    document.getElementById('addressDisplaySection').style.display = 'none';
-    document.getElementById('addressFormSection').style.display = 'block';
-  }
 
-  function submitAddress() {
-    // Handle form data here (optional)
-    // After submit, switch back to display section
-    document.getElementById('addressDisplaySection').style.display = 'block';
-    document.getElementById('addressFormSection').style.display = 'none';
-  }
-</script>
-
-
-  <!-- Google Maps API in case you are adding google api -->
-   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap" async defer></script>
-
-   <script>
-  let map;
-  let marker;
-
-  function initMap() {
-    const defaultLocation = { lat: 11.2588, lng: 75.7804 }; // Replace with your location (e.g., Kerala)
-    map = new google.maps.Map(document.getElementById("map"), {
-      center: defaultLocation,
-      zoom: 15,
-    });
-
-    marker = new google.maps.Marker({
-      position: defaultLocation,
-      map: map,
-      draggable: true
-    });
-
-    const input = document.getElementById("pac-input");
-    const autocomplete = new google.maps.places.Autocomplete(input);
-    autocomplete.bindTo("bounds", map);
-
-    autocomplete.addListener("place_changed", function () {
-      const place = autocomplete.getPlace();
-      if (!place.geometry) return;
-
-      if (place.geometry.viewport) {
-        map.fitBounds(place.geometry.viewport);
-      } else {
-        map.setCenter(place.geometry.location);
-        map.setZoom(17);
-      }
-
-      marker.setPosition(place.geometry.location);
-    });
-
-    // Optional: Update input when marker is dragged
-    google.maps.event.addListener(marker, 'dragend', function () {
-      const position = marker.getPosition();
-      console.log("Lat: " + position.lat() + ", Lng: " + position.lng());
-      // Optionally update some hidden input or send this to your backend
-    });
-  }
-</script>
 
 
 
