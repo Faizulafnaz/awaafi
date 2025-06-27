@@ -64,167 +64,121 @@
       </nav>
     </header>
 
-    <!--================== SIGNUP CARD ==================-->
-    <!-- MAIN BASKET SECTION -->
-    <div class="container my-5" style="padding-bottom: 100px;">
-        <div class="text-center mb-4">
-           <h5 class="text-white">My Basket</h5>
-        </div>
-      <div class="row g-4">
+<!--================== SIGNUP CARD ==================-->
+<!-- MAIN BASKET SECTION -->
+<div class="container my-5" style="padding-bottom: 100px;">
+  <div class="text-center mb-4">
+    <h5 class="my-orders-title">My orders</h5>
+  </div>
+  <div class="row g-4">
 
-        <!-- Left Side -->
-        <div class="col-lg-8 h-100">
-          <!-- user info -->
-          <div class="basket-section-order text-white p-4 rounded mb-3">
-            <p class="small fw-bold">
-              Logged in <i class="bi bi-check-circle-fill text-success me-1"></i>
+    <!-- Left Side -->
+    <div class="col-12 col-lg-8 h-100">
+      <!-- Delivery Address and Payment (Visible by default) -->
+
+
+        <div class="basket-section-order text-white p-4 rounded mb-3">
+          <!-- Food Item Summary -->
+          <div class="d-flex align-items-center mb-3 flex-wrap flex-md-nowrap">
+            <!-- Square Image -->
+            <img src="./assets/img/catering-2.jpg" alt="Food Item"
+              style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px;">
+
+            <!-- Food Details -->
+            <div class="ms-3 mt-2 mt-md-0 flex-grow-1">
+              <p class="mb-1 fw-bold small">Chicken Biryani</p>
+              <p class="mb-1 small">Price: ₹180 x 2</p>
+              <p class="mb-0 small">Total: ₹360</p>
+            </div>
+          </div>
+
+          <!-- Delivery Address -->
+          <div>
+            <p class="small fw-bold mb-1">
+              Delivery Address
+              <span class="text-warning float-end small cursor-pointer" onclick="showAddressForm()">CHANGE</span>
             </p>
-            <p class="small">
-              <span>Name: owaafi</span><br>
-              <span>Mobile: 1234567890</span>
+            <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Address line<br>
+              <small>27 MINS</small>
+            </p>
+          </div>
+        </div>
+    </div>
+
+    <!-- Right Side (Basket) -->
+    <div class="col-12 col-lg-4">
+      <!-- Basket card div -->
+      <div class="bg-white shadow">
+
+        <!-- Green header box -->
+        <div class="w-100 px-3 py-4 d-flex justify-content-center align-items-center"
+          style="background-color: #28a745; min-height: 80px;">
+          <h5 class="text-white m-0 text-center">My Basket</h5>
+        </div>
+
+        <div class="p-4">
+          <!-- Basket Item -->
+          <div class="d-flex align-items-center py-3 border-bottom flex-wrap flex-md-nowrap">
+            <!-- Image (Fixed square) -->
+            <div style="width: 80px; height: 80px; flex-shrink: 0;">
+              <img src="./assets/img/catering-2.jpg" alt="Food Image" class="w-100 h-100"
+                style="object-fit: cover; border-radius: 8px;">
+            </div>
+
+            <!-- Text Section -->
+            <div class="ms-3 mt-2 mt-md-0">
+              <p class="mb-1 fw-bold text-black fs-6">Chips</p>
+              <small class="text-muted">No Mushrooms + green peppers</small>
+            </div>
+          </div>
+
+          <!-- Address Summary -->
+          <div class="align-items-center py-3 border-bottom">
+            <p class="small text-black fw-bold mb-1">Delivery Address</p>
+            <p class="small text-black mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Address line<br>
+              <small>27 MINS</small>
             </p>
           </div>
 
-<!-- Delivery Address and Payment (Visible by default) -->
-<div id="addressDisplaySection">
-  <div class="basket-section-order text-white p-4 rounded mb-3">
-    <p class="small fw-bold">
-      Delivery Address 
-      <span class="text-warning float-end small cursor-pointer" onclick="showAddressForm()">CHANGE</span>
-    </p>
-    <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Address line<br><small>27 MINS</small></p>
-  </div>
+          <hr>
 
-  <!-- Payment Method -->
-  <div class="basket-section-order text-white p-4 rounded mb-3">
-    <h5 class="small fw-bold">Choose payment method</h5>
-    <button class="btn btn-success w-100 mt-3 small fw-bold" style="border-radius: 4px;">PROCEED TO PAY</button>
-  </div>
-</div>
-
-<!-- Delivery Address Form (Initially hidden) -->
-<div id="addressFormSection" class="basket-section-order-form text-white p-4 rounded mb-3" style="display: none;">
-  <p class="small fw-bold">Delivery Address</p>
-
-  <div class="mb-2">
-    <input type="text" class="form-control-section mb-2" placeholder="House / Flat / Building">
-    <input type="text" class="form-control-section mb-2" placeholder="Street / Locality">
-    <input type="text" class="form-control-section mb-2" placeholder="City">
-    <input type="text" class="form-control-section mb-2" placeholder="PIN Code">
-  </div>
-
-  <div class="mb-3">
-    <label class="form-label small">Select Address Type</label>
-    <select class="form-control-section">
-      <option>Home</option>
-      <option>Work</option>
-      <option>Other</option>
-    </select>
-  </div>
-
-  <div class="mb-3">
-    <label class="form-label small">Pick Location</label>
-    <input id="pac-input" class="form-control mb-2" type="text" placeholder="Search location">
-    <div id="map" style="height: 250px;"></div>
-  </div>
-
-  <small class="text-white d-block mt-2">27 MINS</small>
-  <button class="btn btn-success w-100 mt-3 small fw-bold" style="border-radius: 4px;" onclick="submitAddress()">SUBMIT</button>
-</div>
-
-
-
-        </div>
-
-        <!-- Right Side (Basket) -->
-        <div class="col-lg-4">
-          <!-- Basket card div -->
-          <div class="bg-white  shadow">
-
-            <!-- Green header box -->
-            <div class="w-100 px-3 py-4 d-flex justify-content-center align-items-center" style="background-color: #28a745; min-height: 80px;">
-              <h5 class="text-white m-0 text-center">My Basket</h5>
+          <!-- Bill Details -->
+          <div>
+            <p class="text-black fw-bold">Bill Details</p>
+            <div class="d-flex justify-content-between px-3">
+              <span class="text-black">Total Items</span>
+              <span class="text-black">2</span>
+            </div>
+            <div class="d-flex justify-content-between px-3">
+              <span class="text-black">Item Total</span>
+              <span class="text-black">£4.98</span>
+            </div>
+            <div class="d-flex justify-content-between border-bottom py-2 px-3">
+              <span class="text-black">Delivery Fee</span>
+              <span class="text-black">£1.00</span>
             </div>
 
+            <hr>
 
-            <div class="p-4">
-              <!-- Basket Item -->
-              <div class="d-flex justify-content-between align-items-center py-3 border-bottom">
-                <!-- Left Section: Item Name + Description -->
-                <div class="me-3">
-                  <p class="mb-1 fw-bold text-black fs-6">Chips</p>
-                  <small class="text-muted">No Mushrooms + green peppers</small>
-                </div>
-
-                <!-- Right Section: Counter + Price -->
-                <div class="d-flex align-items-center">
-                  <div class="custom-counter d-flex align-items-center justify-content-center">
-                    <div class="btn-wrapper">
-                      <button class="inner-btn">-</button>
-                    </div>
-                    <span class="count-value mx-2">2</span>
-                    <div class="btn-wrapper">
-                      <button class="inner-btn">+</button>
-                    </div>
-                  </div>
-                  <span class="total-text ms-3 fw-bold ">£4.98</span>
-                </div>
-              </div>
-
-  
-              <!-- No Contact Delivery -->
-              <div class="form-check mt-3 delivery-box  ">
-                <div class="d-flex justify-content-center align-items-center">
-                  <input class="form-check-input me-2" type="checkbox" id="contactlessDelivery">
-                  <label class="form-check-label delivery-label" for="contactlessDelivery">
-                    Opt in for No-contact Delivery
-                  </label>
-                </div>
-                <p class="delivery-description text-center">
-                  Unwell or avoiding contact? Please select no-contact delivery. Partner will safely place the order outside your door (not for COD).
-                </p>
-              </div>
-
-
-  
-              <!-- Coupon Code -->
-              <div class="input-group mt-3 ">
-                <input type="text" class="form-control" placeholder="Coupon code">
-                <button class="btn btn-outline-dark">Apply coupon</button>
-              </div>
-  
-              <hr>
-  
-              <!-- Totals -->
-               <div >
-                <p class="text-black fw-bold">Bill details</p>
-                 <div class="d-flex justify-content-between px-3">
-                   <span class="text-black">Item Total</span>
-                   <span class="text-black">£4.98</span>
-                 </div>
-                 <div class="d-flex justify-content-between border-bottom py-2 px-3">
-                   <span class="text-black">Delivery Fee</span>
-                   <span class="text-black">£1.00</span>
-                 </div>
-                 <hr>
-                 <div class="d-flex justify-content-between fw-bold px-2">
-                   <span class="text-black">TO PAY</span>
-                   <span class="text-black">£5.98</span>
-                 </div>
-
-               </div>
-
+            <div class="d-flex justify-content-between fw-bold px-2">
+              <span class="text-black">TO PAY</span>
+              <span class="text-black">£5.98</span>
             </div>
-
-
           </div>
 
+          <!-- Payment Method -->
+          <div class="mt-3 text-center">
+            <p class="fw-bold text-success small mb-0">Cash on Delivery</p>
+            <!-- Or use: <p class="fw-bold text-primary small mb-0">Paid Online</p> -->
+          </div>
         </div>
       </div>
-
-      
     </div>
-    <!--================== END SIGNUP CARD ==================-->
+  </div>
+</div>
+<!--================== END SIGNUP CARD ==================-->
+
   </div>
   <!--================== END NAVBAR & HERO SECTION ==================-->
 

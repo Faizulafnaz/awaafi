@@ -398,10 +398,20 @@ p{
 
 /*===== basket section =====*/
 
+.my-orders-title{
+  font-weight: 600;
+  font-size: 30px;
+}
 
 .basket-section-order {
-  background-color: #2c2c2c; /* dark gray, slightly lighter than black */
-  height: 190px
+  background-color: #363636; /* dark gray, slightly lighter than black */
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+
+
 }
 
 .basket-section-order-form {
